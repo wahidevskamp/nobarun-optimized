@@ -56,9 +56,9 @@ const IndexPage = ({
                     style={{
                       width: '100%',
                       height: '100%',
-                      objectFit: 'contain',
+                      objectFit: 'cover',
                     }}
-                    // className="lazyload"
+                    className="lazyload"
                   />
                 </div>
               </StyledCarouselCard1>
