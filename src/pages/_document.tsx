@@ -47,10 +47,10 @@ export default class extends Document {
               `,
             }}
           /> */}
-          <link
+          {/* <link
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
             rel="stylesheet"
-          />
+          /> */}
           {process.env.NEXT_PUBLIC_IMAGE_URL && (
             <link
               rel="preconnect"
