@@ -132,13 +132,16 @@ const IndexPage = ({
                             // className="lazyload"
                           />
                         </HoverBox>
-                        <H3
-                          fontSize="1.4rem"
-                          fontWeight="600"
+                        <h6
                           className="client__title"
+                          style={{
+                            fontSize: '1.4rem',
+                            fontWeight: 600,
+                            margin: 0,
+                          }}
                         >
                           {item.title}
-                        </H3>
+                        </h6>
                       </Box>
                     </Grid>
                   ))}
