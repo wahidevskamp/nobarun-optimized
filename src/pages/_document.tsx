@@ -33,7 +33,7 @@ export default class extends Document {
       <Html lang="en">
         <Head>
           {/* Google Analytics GA4 */}
-          <script
+          {/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-3837KCTGLJ"
           ></script>
@@ -46,7 +46,7 @@ export default class extends Document {
                 gtag('config', 'G-3837KCTGLJ');
               `,
             }}
-          />
+          /> */}
           <link
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
             rel="stylesheet"
