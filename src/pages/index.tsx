@@ -137,6 +137,7 @@ const IndexPage = ({
                             fontSize: '1.4rem',
                             fontWeight: 600,
                             margin: 0,
+                            minHeight: '2rem',
                           }}
                         >
                           {item.title}
