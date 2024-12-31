@@ -49,7 +49,7 @@ const IndexPage = ({
               <StyledCarouselCard1>
                 <div className="image-holder">
                   <img
-                    data-src={
+                    src={
                       '/assets/images/banners/1-Bakery-Equipment-nobarun.webp'
                     }
                     alt="Hero Image of Nobarun"
@@ -59,8 +59,16 @@ const IndexPage = ({
                       minHeight: '510px',
                       objectFit: 'contain',
                     }}
-                    className="lazyload"
+                    // className="lazyload"
                   />
+                  {/* <Image
+                    src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
+                    alt="Hero Image of Nobarun"
+                    width={'1150px'}
+                    height={'513px'}
+                    objectFit="contain"
+                    priority={true}
+                  /> */}
                 </div>
               </StyledCarouselCard1>
             </Container>

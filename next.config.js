@@ -4,7 +4,6 @@ module.exports = {
   },
   images: {
     domains: ['d1v2sbji1mlin2.cloudfront.net'],
-    path: 'd1v2sbji1mlin2.cloudfront.net/_next/image',
   },
   async headers() {
     return [
