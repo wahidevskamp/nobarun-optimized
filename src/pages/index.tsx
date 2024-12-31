@@ -13,7 +13,7 @@ import Card from '../components/Card';
 import Container from '../components/Container';
 import FlexBox from '../components/FlexBox';
 import HoverBox from '../components/HoverBox';
-import Typography, { H2, H3, H4, H6, SemiSpan } from '../components/Typography';
+import { H2, H3, H4, H6, SemiSpan } from '../components/Typography';
 import { StyledCarouselCard1 } from '../components/carousel-cards/CarouselCardStyle';
 import Grid from '../components/grid/Grid';
 import Icon from '../components/icon/Icon';
@@ -132,13 +132,13 @@ const IndexPage = ({
                             // className="lazyload"
                           />
                         </HoverBox>
-                        <Typography
+                        <H6
                           fontSize="1.4rem"
                           fontWeight="600"
                           className="client__title"
                         >
                           {item.title}
-                        </Typography>
+                        </H6>
                       </Box>
                     </Grid>
                   ))}
