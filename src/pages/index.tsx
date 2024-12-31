@@ -131,16 +131,13 @@ const IndexPage = ({
                             // className="lazyload"
                           />
                         </HoverBox>
-                        <p
+                        <H3
+                          fontSize={'1.4rem'}
+                          fontWeight={600}
                           className="client__title"
-                          style={{
-                            fontSize: '1.4rem',
-                            fontWeight: 600,
-                            margin: 0,
-                          }}
                         >
                           {item.title}
-                        </p>
+                        </H3>
                       </Box>
                     </Grid>
                   ))}
@@ -207,7 +204,11 @@ const IndexPage = ({
                                     item.image
                                   }
                                   alt={`Thumbnail for ${item.name} featured category`}
-                                  style={{ height: '100%', width: '100%' }}
+                                  style={{
+                                    height: '100%',
+                                    width: '100%',
+                                    objectFit: 'cover',
+                                  }}
                                   // className="lazyload"
                                 />
                               </HoverBox>
