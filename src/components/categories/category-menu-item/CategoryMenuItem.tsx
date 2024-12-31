@@ -27,7 +27,7 @@ const CategoryMenuItem: React.FC<CategoryMenuItemProps> = ({
               <img
                 alt={`Icon for ${title} category`}
                 src={process.env.NEXT_PUBLIC_IMAGE_URL + icon}
-                style={{ objectFit: 'contain', width: '30px', height: '100%' }}
+                style={{ objectFit: 'cover', width: '30px', height: '30px' }}
                 className="lazyload"
               />
             )}
