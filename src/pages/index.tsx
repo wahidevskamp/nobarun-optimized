@@ -61,14 +61,6 @@ const IndexPage = ({
                     }}
                     // className="lazyload"
                   />
-                  {/* <Image
-                    src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
-                    alt="Hero Image of Nobarun"
-                    width={'1150px'}
-                    height={'513px'}
-                    objectFit="contain"
-                    priority={true}
-                  /> */}
                 </div>
               </StyledCarouselCard1>
             </Container>
@@ -127,7 +119,7 @@ const IndexPage = ({
                       <Box className="client client_related">
                         <HoverBox borderRadius={5} className="client__body">
                           <img
-                            data-src={
+                            src={
                               process.env.NEXT_PUBLIC_IMAGE_URL + item.imgUrl
                             }
                             alt={`Image for ${item.title} client`}
@@ -137,7 +129,7 @@ const IndexPage = ({
                               maxHeight: '110px',
                               objectFit: 'contain',
                             }}
-                            className="lazyload"
+                            // className="lazyload"
                           />
                         </HoverBox>
                         <Typography
