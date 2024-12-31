@@ -1,4 +1,7 @@
 module.exports = {
+  experimental: {
+    modern: true,
+  },
   devIndicators: {
     autoPrerender: false,
   },
