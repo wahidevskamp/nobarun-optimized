@@ -202,13 +202,13 @@ const IndexPage = ({
                                 className="featuredCategories__image"
                               >
                                 <img
-                                  data-src={
+                                  src={
                                     process.env.NEXT_PUBLIC_IMAGE_URL +
                                     item.image
                                   }
                                   alt={`Thumbnail for ${item.name} featured category`}
                                   style={{ height: '100%', width: '100%' }}
-                                  className="lazyload"
+                                  // className="lazyload"
                                 />
                               </HoverBox>
                               <H4
