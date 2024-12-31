@@ -55,7 +55,7 @@ const IndexPage = ({
                     alt="Hero Image of Nobarun"
                     style={{
                       width: '100%',
-                      height: '510px',
+                      height: '100%',
                       objectFit: 'contain',
                     }}
                     // className="lazyload"
