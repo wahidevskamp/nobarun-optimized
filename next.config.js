@@ -1,0 +1,22 @@
+module.exports = {
+  devIndicators: {
+    autoPrerender: false,
+  },
+  images: {
+    domains: ['d1v2sbji1mlin2.cloudfront.net'],
+    path: 'd1v2sbji1mlin2.cloudfront.net/_next/image',
+  },
+  async headers() {
+    return [
+      {
+        source: '/assets',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, must-revalidate',
+          }
+        ],
+      },
+    ]
+  },
+};

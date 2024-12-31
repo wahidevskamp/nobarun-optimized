@@ -1,0 +1,153 @@
+.query {
+  padding: 3rem;
+  z-index: 11111;
+  @include respond(767px) {
+    padding: 2rem 1rem;
+  }
+  @include respond(600px) {
+    label {
+      font-size: 1.6rem !important;
+      margin-bottom: 0 !important;
+    }
+    input {
+      height: 35px !important;
+    }
+  }
+  @include respond(300px) {
+    input {
+      height: 30px !important;
+    }
+  }
+
+  &__header {
+    margin-bottom: 3rem;
+    @include respond(768px) {
+      & > h1 {
+        line-height: 100% !important;
+      }
+      margin-bottom: 1rem;
+    }
+  }
+  &__hero {
+    position: absolute;
+    z-index: 100;
+    right: -5px;
+    @include respond(768px) {
+      right: 0;
+    }
+    @include respond(600px) {
+      width: 90%;
+      top: -5rem;
+    }
+    @include respond(550px) {
+      width: 100%;
+      top: -5rem;
+    }
+    @include respond(500px) {
+      top: -2rem;
+    }
+    @include respond(450px) {
+      top: 0rem;
+    }
+    @include respond(400px) {
+      top: -5rem;
+      width: 90%;
+    }
+    @include respond(380px) {
+      top: -5rem;
+      width: 95%;
+    }
+    @include respond(350px) {
+      top: 0rem;
+      width: 95%;
+    }
+    @include respond(300px) {
+      width: 100%;
+    }
+    @include respond(270px) {
+      top: 3rem;
+    }
+    &-wrapper {
+      width: 20%;
+      position: relative;
+      display: block;
+      @include respond(768px) {
+        width: 30%;
+      }
+      @include respond(600px) {
+        width: 35%;
+      }
+      // @include respond(520px) {
+      //   width: 40%;
+      // }
+    }
+    // @include respond(450px) {
+    //   height: 46rem;
+    //   width: 29.1;
+    // }
+  }
+  &__form {
+    width: 80%;
+    margin-left: auto;
+    @include respond(768px) {
+      width: 70%;
+      button {
+        margin-top: 1rem !important;
+      }
+    }
+    @include respond(600px) {
+      width: 65%;
+    }
+    // @include respond(520px) {
+    //   width: 60%;
+    // }
+    @include respond(400px) {
+      width: 65%;
+    }
+    // @include respond(350px) {
+    //   width: 65%;
+    // }
+    // @include respond(300px) {
+    //   width: 60%;
+    // }
+    & > div > div {
+      @include respond(768px) {
+        padding: 0 !important;
+        // & textarea {
+        //   height: 5rem !important;
+        // }
+      }
+    }
+  }
+  &__textarea {
+    @include respond(768px) {
+      height: 80px;
+    }
+    @include respond(600px) {
+      height: 60px;
+    }
+  }
+  &__file {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4b566b;
+    & > input {
+      display: none;
+    }
+  }
+  &__terms {
+    font-size: 2.2rem;
+    color: #4b566b;
+    margin-left: 1rem;
+    @include respond(600px) {
+      font-size: 1.6rem;
+    }
+    @include respond(300px) {
+      font-size: 1.4rem;
+      margin-left: 0.5rem;
+    }
+  }
+}

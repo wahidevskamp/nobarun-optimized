@@ -1,0 +1,89 @@
+.searchbox {
+  max-width: 670px;
+  max-height: 51px;
+  margin: auto;
+  @include respond(900px) {
+    max-width: none;
+  }
+  &__btn {
+    @include respond(600px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.sidebar-menu {
+  padding: 2rem 2rem;
+  & > div {
+    margin-bottom: 1rem;
+  }
+  // &__accordion {
+  //   margin-bottom: 2rem;
+  // }
+  &__category {
+    background-image: linear-gradient(to right, #1ca346, #6fba1a);
+    color: #fff !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    // height: 150px !important;
+  }
+  &__link {
+    padding: 0 10px;
+    &:not(:last-child) {
+      border-bottom: 1px solid #efefef;
+    }
+  }
+}
+
+.container {
+  max-width: 160rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (max-width: 107em) {
+    max-width: 145rem;
+  }
+  @media only screen and (max-width: 1399px) {
+    max-width: 120rem;
+  }
+  @media only screen and (max-width: 1299px) {
+    max-width: 114rem;
+  }
+  @media only screen and (max-width: 1199px) {
+    max-width: 100rem;
+  }
+  @media only screen and (max-width: 1045px) {
+    max-width: 90rem;
+  }
+  @media only screen and (max-width: 945px) {
+    max-width: 75rem;
+  }
+  @media only screen and (max-width: 76rem) {
+    max-width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  @media only screen and (max-width: 37.5em) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.tabletHeader {
+  display: none !important;
+  @media only screen and (max-width: 900px) {
+    display: flex !important;
+  }
+}
+
+.tablet {
+  display: none !important;
+  @media only screen and (max-width: 900px) {
+    display: block !important;
+  }
+}
+.fullsize {
+  @media only screen and (max-width: 900px) {
+    display: none !important;
+  }
+}

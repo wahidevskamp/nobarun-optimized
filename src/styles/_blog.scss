@@ -1,0 +1,78 @@
+.hero {
+  text-align: center;
+  margin-top: 4rem;
+  // margin-bottom: 8rem;
+  @include respond(900px) {
+    margin-bottom: 4rem;
+  }
+  &__title {
+    font-size: 5rem;
+    font-weight: 600;
+    margin: 0rem;
+    @include respond(900px) {
+      font-size: 3rem;
+    }
+  }
+  &__content {
+    font-weight: 600;
+    font-size: 2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    @include respond(900px) {
+      font-size: 1.6rem;
+    }
+  }
+}
+.blog {
+  font-family: 'SolaimanLipi', sans-serif !important;
+
+  @include respond(900px) {
+    padding: 1rem !important;
+  }
+  @include respond(600px) {
+    padding: 2rem !important;
+  }
+  &__card {
+    & h2,
+    & p {
+      font-family: 'SolaimanLipi', sans-serif !important;
+    }
+  }
+  &__hero {
+    position: relative;
+    width: 100%;
+    max-height: 55rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  &__title {
+    font-size: 6rem;
+    margin-bottom: 2rem !important;
+    @include respond(900px) {
+      font-size: 4rem !important;
+    }
+  }
+  &__section {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+    & > h3 {
+      font-size: 3rem;
+    }
+    font-size: 2.4rem;
+    line-height: 4rem;
+    text-align: justify;
+    & li {
+      margin-bottom: 1rem;
+    }
+    & figure {
+      padding-bottom: 0 !important;
+    }
+    & iframe {
+      min-height: 60rem !important;
+    }
+  }
+}

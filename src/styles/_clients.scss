@@ -1,0 +1,79 @@
+.clients-list_wrapper {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(7, minmax(180px, 1fr));
+
+  @include respond(1400px) {
+    gap: 1rem;
+    grid-template-columns: repeat(7, minmax(160px, 1fr));
+  }
+
+  @include respond(1250px) {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  @include respond(900px) {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  @include respond(600px) {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+
+    & img {
+      width: 120px !important;
+      height: 120px !important;
+    }
+  }
+
+  @include respond(500px) {
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+  }
+
+  @include respond(400px) {
+    & img {
+      width: 140px !important;
+      height: 140px !important;
+    }
+  }
+
+  @include respond(300px) {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+
+    & img {
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }
+
+  // @include respond(490px) {
+  //   grid-template-columns: repeat(3, minmax(200px, 1fr));
+  // }
+  // @include respond(300px) {
+  //   grid-template-columns: repeat(3, minmax(170px, 1fr));
+  // }
+}
+
+.client {
+  &_list {
+    height: 20.6rem;
+  }
+
+  &_load-btn {
+    background-color: #FFFDFD;
+    border: none;
+    color: #DD080F;
+    border-radius: 2rem;
+    width: 18.4rem;
+    height: 4.9rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-left: auto;
+    cursor: pointer;
+
+    &:disabled,
+    &[disabled] {
+      color: #666666 !important;
+      cursor: no-drop;
+    }
+  }
+}

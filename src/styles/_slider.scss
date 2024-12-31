@@ -1,0 +1,42 @@
+.slider-container {
+  padding-right: 1rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover .scroll {
+    animation-play-state: paused;
+  }
+}
+
+.slider-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.client_related {
+  cursor: pointer !important;
+}
+
+/* Animation Class */
+
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
