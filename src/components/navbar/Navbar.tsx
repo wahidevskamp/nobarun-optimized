@@ -159,6 +159,7 @@ const Navbar: React.FC<NavbarProps> = ({ navListOpen, height, categories }) => {
             </svg>
           </Button>
         </Categories>
+
         <FlexBox
           style={{ flexGrow: 1 }}
           justifyContent="space-between"

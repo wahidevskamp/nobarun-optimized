@@ -66,13 +66,13 @@ const CategoryDropdown: React.FC<CategoryDropdownProps> = forwardRef(
       categories
         // .concat(categories)
         .slice(0, slice)
-        .map((item,index) => (
+        .map((item, index) => (
           <CategoryMenuItem
             title={item.name}
             href={`/category/${item.slug}`}
             icon={item.icon}
             caret={item.children}
-            key={index+1}
+            key={index + 1}
           >
             <MegaMenu data={item.children || {}} />
           </CategoryMenuItem>
