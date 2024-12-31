@@ -131,13 +131,16 @@ const IndexPage = ({
                             // className="lazyload"
                           />
                         </HoverBox>
-                        <H3
-                          fontSize={'1.4rem'}
-                          fontWeight={600}
+                        <p
                           className="client__title"
+                          style={{
+                            fontSize: '1.4rem',
+                            fontWeight: 600,
+                            margin: 0,
+                          }}
                         >
                           {item.title}
-                        </H3>
+                        </p>
                       </Box>
                     </Grid>
                   ))}
@@ -199,17 +202,13 @@ const IndexPage = ({
                                 className="featuredCategories__image"
                               >
                                 <img
-                                  src={
+                                  data-src={
                                     process.env.NEXT_PUBLIC_IMAGE_URL +
                                     item.image
                                   }
                                   alt={`Thumbnail for ${item.name} featured category`}
-                                  style={{
-                                    height: '100%',
-                                    width: '100%',
-                                    objectFit: 'cover',
-                                  }}
-                                  // className="lazyload"
+                                  style={{ height: '100%', width: '100%' }}
+                                  className="lazyload"
                                 />
                               </HoverBox>
                               <H4
