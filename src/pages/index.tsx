@@ -128,13 +128,15 @@ const IndexPage = ({
                             quality={90}
                             className="object-fit-cover"
                           /> */}
-                          <Image
-                            loader={imageLoader}
-                            src={item.imgUrl}
+                          <img
+                            // loader={imageLoader}
+                            src={
+                              process.env.NEXT_PUBLIC_IMAGE_URL + item.imgUrl
+                            }
                             alt={`Thumbnail for ${item.title} featured category`}
                             width="151px"
                             height="139px"
-                            quality={90}
+                            // quality={90}
                             className="object-fit-cover"
                           />
                         </HoverBox>
