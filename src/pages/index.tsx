@@ -206,6 +206,7 @@ const IndexPage = ({
                                   width="290px"
                                   height="290px"
                                   quality={90}
+                                  className="object-fit-cover"
                                 />
                               </HoverBox>
                               <H4
