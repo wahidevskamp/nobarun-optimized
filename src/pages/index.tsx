@@ -123,8 +123,8 @@ const IndexPage = ({
                             loader={imageLoader}
                             src={item.imgUrl}
                             alt={`Image for ${item.title} client`}
-                            width="151px"
-                            height="139px"
+                            width={151}
+                            height={139}
                             quality={90}
                             className="object-fit-cover"
                           />
