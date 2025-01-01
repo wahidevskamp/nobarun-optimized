@@ -8,8 +8,6 @@ import client from '../config/ApolloClient';
 import useAllProductCategories from '@hook/Home/useAllProductCategories';
 import AppLayout from '../components/layout/AppLayout';
 //
-import imageLoader from '@component/ImageLoader';
-import Image from 'next/image';
 import Box from '../components/Box';
 import Card from '../components/Card';
 import Container from '../components/Container';
@@ -208,13 +206,23 @@ const IndexPage = ({
                                 mb="0.5rem"
                                 className="featuredCategories__image"
                               >
-                                <Image
+                                {/* <Image
                                   loader={imageLoader}
                                   src={item.image}
                                   alt={`Thumbnail for ${item.name} featured category`}
                                   width="290px"
                                   height="290px"
                                   quality={90}
+                                  className="object-fit-cover"
+                                /> */}
+                                <img
+                                  src={
+                                    process.env.NEXT_PUBLIC_IMAGE_URL +
+                                    item.image
+                                  }
+                                  alt={`Thumbnail for ${item.name} featured category`}
+                                  width="290px"
+                                  height="290px"
                                   className="object-fit-cover"
                                 />
                               </HoverBox>

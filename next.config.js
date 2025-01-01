@@ -4,6 +4,15 @@ module.exports = {
   },
   images: {
     domains: ['d1v2sbji1mlin2.cloudfront.net'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'd1v2sbji1mlin2.cloudfront.net',
+        port: '',
+        pathname: '/media/**',
+        search: '',
+      },
+    ],
   },
   async headers() {
     return [
