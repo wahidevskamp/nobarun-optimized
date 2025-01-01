@@ -48,16 +48,29 @@ export default class extends Document {
             }}
           /> */}
           <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
+            as="style"
+          />
+          <link
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
             rel="stylesheet"
+            media="print"
+            // onLoad="this.media='all'"
           />
-          {process.env.NEXT_PUBLIC_IMAGE_URL && (
+          <noscript>
+            <link
+              href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
+              rel="stylesheet"
+            />
+          </noscript>
+          {/* {process.env.NEXT_PUBLIC_IMAGE_URL && (
             <link
               rel="preconnect"
               href={new URL(process.env.NEXT_PUBLIC_IMAGE_URL).origin}
               crossOrigin="anonymous"
             />
-          )}
+          )} */}
         </Head>
         <body>
           <Main />
