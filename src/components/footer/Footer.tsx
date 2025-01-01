@@ -143,7 +143,6 @@ const Footer: React.FC = () => {
                       className="lazyload"
                     />
                   </a>
-                  {/*<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>*/}
                 </div>
               </Grid>
             </Grid>
