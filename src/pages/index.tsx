@@ -119,13 +119,13 @@ const IndexPage = ({
                     >
                       <Box className="client client_related">
                         <HoverBox borderRadius={5} className="client__body">
-                          <Image
-                            loader={imageLoader}
+                          <img
+                            // loader={imageLoader}
                             src={item.imgUrl}
                             alt={`Image for ${item.title} client`}
                             width="151px"
                             height="139px"
-                            quality={90}
+                            // quality={90}
                             className="object-fit-cover"
                           />
                         </HoverBox>
@@ -193,6 +193,7 @@ const IndexPage = ({
                               alignItems="center"
                               flexDirection="column"
                               justifyContent="center"
+                              style={{ minHeight: '320px' }}
                             >
                               <HoverBox
                                 borderRadius={5}
