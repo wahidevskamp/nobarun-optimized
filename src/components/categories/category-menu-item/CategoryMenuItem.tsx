@@ -26,6 +26,14 @@ const CategoryMenuItem: React.FC<CategoryMenuItemProps> = ({
         <a>
           <div className="category-dropdown-link">
             {icon && (
+              // <img
+              //   alt={`Icon for ${title} category`}
+              //   src={process.env.NEXT_PUBLIC_IMAGE_URL + icon}
+              //   width={30}
+              //   height={30}
+              //   style={{ objectFit: 'cover' }}
+              //   className="lazyload"
+              // />
               <Image
                 loader={imageLoader}
                 src={icon}
@@ -33,6 +41,7 @@ const CategoryMenuItem: React.FC<CategoryMenuItemProps> = ({
                 width="30"
                 height="30"
                 quality={100}
+                className="object-fit-cover"
               />
             )}
             <span className="title">{title}</span>
