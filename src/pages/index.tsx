@@ -119,12 +119,21 @@ const IndexPage = ({
                     >
                       <Box className="client client_related">
                         <HoverBox borderRadius={5} className="client__body">
-                          <Image
+                          {/* <Image
                             loader={imageLoader}
                             src={item.imgUrl}
                             alt={`Image for ${item.title} client`}
                             width={151}
                             height={139}
+                            quality={90}
+                            className="object-fit-cover"
+                          /> */}
+                          <Image
+                            loader={imageLoader}
+                            src={item.imgUrl}
+                            alt={`Thumbnail for ${item.title} featured category`}
+                            width="151px"
+                            height="139px"
                             quality={90}
                             className="object-fit-cover"
                           />
