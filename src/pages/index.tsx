@@ -68,10 +68,8 @@ const IndexPage = ({
           </Box>
         </Fragment>
 
-        <Container
-          style={width < 600 ? { margin: '0rem' } : { minHeight: '300px' }}
-        >
-          {!isMobile && clients && clients.length ? (
+        <Container className="container-width">
+          {clients && clients.length ? (
             <Fragment>
               <FlexBox
                 justifyContent="space-between"
@@ -148,7 +146,7 @@ const IndexPage = ({
         </Container>
 
         <Box mt="5rem" mb="5rem">
-          <Container style={width < 600 ? { margin: '0rem' } : {}}>
+          <Container className="container-width">
             {featuredCategories && featuredCategories.length ? (
               <Box>
                 <FlexBox

@@ -28,10 +28,6 @@
   border-bottom-right-radius: 5px;
 }
 
-.object-fit-cover {
-  object-fit: cover !important;
-}
-
 .featuredCategories {
   margin-bottom: 1.5rem;
   position: relative;
@@ -475,3 +471,11 @@
 }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* custom css */
+.object-fit-cover {
+  object-fit: cover !important;
+}
+
+/* .container-width {} */
