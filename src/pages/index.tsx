@@ -42,7 +42,7 @@ const IndexPage = ({
 
   return (
     <>
-      <main>
+      <main style={{ minHeight: '100vh' }}>
         <GoToTop showBelow={250} />
         <Fragment>
           <Navbar navListOpen={true} height={height} categories={categories} />
