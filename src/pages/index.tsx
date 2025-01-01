@@ -8,6 +8,7 @@ import client from '../config/ApolloClient';
 import useAllProductCategories from '@hook/Home/useAllProductCategories';
 import AppLayout from '../components/layout/AppLayout';
 //
+import Image from 'next/image';
 import Box from '../components/Box';
 import Card from '../components/Card';
 import Container from '../components/Container';
@@ -21,6 +22,12 @@ import Navbar from '../components/navbar/Navbar';
 import { StyledProductCard1 } from '../components/product-cards/CardStyle';
 import Rating from '../components/rating/Rating';
 import useWindowSize from '../hooks/useWindowSize';
+
+const imageLoader = ({ src, width, height, quality }) => {
+  return `https://d1v2sbji1mlin2.cloudfront.net/${src}?w=${width}&h=${height}&q=${
+    quality || 75
+  }`;
+};
 
 const IndexPage = ({
   clients,
@@ -201,7 +208,15 @@ const IndexPage = ({
                                 mb="0.5rem"
                                 className="featuredCategories__image"
                               >
-                                <img
+                                <Image
+                                  loader={imageLoader}
+                                  src={item.image}
+                                  alt={`Thumbnail for ${item.name} featured category`}
+                                  width="290px"
+                                  height="290px"
+                                  quality={90}
+                                />
+                                {/* <img
                                   src={
                                     process.env.NEXT_PUBLIC_IMAGE_URL +
                                     item.image
@@ -209,7 +224,7 @@ const IndexPage = ({
                                   alt={`Thumbnail for ${item.name} featured category`}
                                   style={{ height: '100%', width: '100%' }}
                                   // className="lazyload"
-                                />
+                                /> */}
                               </HoverBox>
                               <H4
                                 fontSize="18px"
