@@ -1,7 +1,7 @@
 import IconButton from '@component/buttons/IconButton';
 import Icon from '@component/icon/Icon';
 import useWindowSize from '@hook/useWindowSize';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const GoToTop = ({ showBelow }) => {
   const [show, setShow] = useState(false);
@@ -27,7 +27,12 @@ const GoToTop = ({ showBelow }) => {
   return (
     <>
       {show && (
-        <IconButton size="small" className="goto" onClick={handleClick}>
+        <IconButton
+          size="small"
+          className="goto"
+          aria-label="Go to top"
+          onClick={handleClick}
+        >
           <Icon size={width > 900 ? '4rem' : '3rem'}>up-arrow</Icon>
         </IconButton>
       )}
