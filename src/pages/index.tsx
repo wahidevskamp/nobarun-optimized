@@ -53,7 +53,7 @@ const IndexPage = ({
                   className="image-holder"
                   style={{ width: '100%', height: '550px' }}
                 >
-                  <img
+                  {/* <img
                     src={
                       '/assets/images/banners/1-Bakery-Equipment-nobarun.webp'
                     }
@@ -65,8 +65,8 @@ const IndexPage = ({
                       height: '100%',
                       objectFit: 'cover',
                     }}
-                    // className="lazyload"
-                  />
+                    className="lazyload"
+                  /> */}
 
                   {/* <Image
                     src={`/assets/images/banners/1-Bakery-Equipment-nobarun.webp`}
