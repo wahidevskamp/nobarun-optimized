@@ -159,7 +159,8 @@ const IndexPage = ({
                       fontWeight="600"
                       lineHeight="1"
                       fontSize={
-                        width < 600 ? (width < 400 ? '20px' : '26px') : '32px'
+                        // width < 600 ? (width < 400 ? '20px' : '26px') : '32px'
+                        '32px'
                       }
                       mb="1.5rem"
                       ml={width < 600 ? '1rem' : '0'}
@@ -172,7 +173,13 @@ const IndexPage = ({
                     </H3>
                   </FlexBox>
                 </FlexBox>
-                <Card p="1rem" mt="4rem" bg="transparent" boxShadow="none">
+                <Card
+                  p="1rem"
+                  mt="4rem"
+                  bg="transparent"
+                  boxShadow="none"
+                  style={{ minHeight: '400px' }}
+                >
                   <Grid container spacing={4}>
                     {featuredCategories.map((item) => (
                       <Grid
@@ -205,7 +212,12 @@ const IndexPage = ({
                                   width="290px"
                                   height="290px"
                                   quality={90}
-                                  className="object-fit-cover"
+                                  className="object-fit-cover lazyload"
+                                  // style={{
+                                  //   width: '290px',
+                                  //   height: '290px',
+                                  //   objectFit: 'cover',
+                                  // }}
                                 />
                               </HoverBox>
                               <H4

@@ -46,23 +46,16 @@ export default class extends Document {
           `,
             }}
           />
-          {/* <link
+          <link
             rel="preload"
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
-            as="style"
+            as="font"
+            type="font/woff2"
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
             rel="stylesheet"
-            media="print"
-            // onLoad="this.media='all'"
           />
-          <noscript>
-            <link
-              href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
-              rel="stylesheet"
-            />
-          </noscript> */}
           {/* {process.env.NEXT_PUBLIC_IMAGE_URL && (
             <link
               rel="preconnect"
