@@ -33,7 +33,7 @@ const IndexPage = ({
   const width = useWindowSize();
   const [height, setHeight] = useState(400);
   const isTablet = width < 1025;
-  const isMobile = width <= 768;
+  // const isMobile = width <= 768;
   const heroContainer = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const rect = heroContainer?.current?.getBoundingClientRect();
@@ -55,12 +55,14 @@ const IndexPage = ({
                       '/assets/images/banners/1-Bakery-Equipment-nobarun.webp'
                     }
                     alt="Hero Image of Nobarun"
+                    width={100}
+                    height={100}
                     style={{
                       width: '100%',
                       height: '100%',
                       objectFit: 'cover',
                     }}
-                    className="lazyload"
+                    // className="lazyload"
                   />
                 </div>
               </StyledCarouselCard1>
@@ -69,7 +71,7 @@ const IndexPage = ({
         </Fragment>
 
         <Container className="container-width">
-          {!isMobile && clients && clients.length ? (
+          {clients && clients.length ? (
             <Fragment>
               <FlexBox
                 justifyContent="space-between"
@@ -178,7 +180,7 @@ const IndexPage = ({
                   mt="4rem"
                   bg="transparent"
                   boxShadow="none"
-                  style={{ minHeight: '400px' }}
+                  style={{ minHeight: '350px' }}
                 >
                   <Grid container spacing={4}>
                     {featuredCategories.map((item) => (
@@ -198,7 +200,6 @@ const IndexPage = ({
                               alignItems="center"
                               flexDirection="column"
                               justifyContent="center"
-                              style={{ minHeight: '320px' }}
                             >
                               <HoverBox
                                 borderRadius={5}
