@@ -24,6 +24,10 @@ import { StyledProductCard1 } from '../components/product-cards/CardStyle';
 import Rating from '../components/rating/Rating';
 import useWindowSize from '../hooks/useWindowSize';
 
+const imageLoader2 = ({ src, width = 100, height = 100, quality = 75 }) => {
+  return `${src}?w=${width}&h=${height}&q=${quality}`;
+};
+
 const IndexPage = ({
   clients,
   categories,
@@ -49,20 +53,37 @@ const IndexPage = ({
           <Box bg="gray.white" mt={isTablet ? '2.5rem' : ''}>
             <Container ref={heroContainer}>
               <StyledCarouselCard1>
-                <div className="image-holder">
-                  <img
+                <div
+                  className="image-holder"
+                  style={{
+                    position: 'relative',
+                    width: '100%',
+                    height: '100%',
+                  }}
+                >
+                  {/* <img
                     src={
-                      '/assets/images/banners/1-Bakery-Equipment-nobarun.webp'
+                      ''
                     }
                     alt="Hero Image of Nobarun"
-                    width={100}
-                    height={100}
+                    width="100%"
+                    height="100%"
                     style={{
                       width: '100%',
                       height: '100%',
                       objectFit: 'cover',
                     }}
                     // className="lazyload"
+                  /> */}
+                  <Image
+                    loader={imageLoader2}
+                    src={`assets/images/banners/1-Bakery-Equipment-nobarun.webp`}
+                    alt={`Hero Image of Nobarun`}
+                    width="100%"
+                    height="100%"
+                    quality={70}
+                    // layout="fill"
+                    className="object-fit-cover"
                   />
                 </div>
               </StyledCarouselCard1>
@@ -214,11 +235,6 @@ const IndexPage = ({
                                   height="290px"
                                   quality={90}
                                   className="object-fit-cover lazyload"
-                                  // style={{
-                                  //   width: '290px',
-                                  //   height: '290px',
-                                  //   objectFit: 'cover',
-                                  // }}
                                 />
                               </HoverBox>
                               <H4
