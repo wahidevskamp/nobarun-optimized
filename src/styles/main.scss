@@ -12,6 +12,7 @@
 
 $darkGrey: #dbdbdb;
 $primaryColor: #80c627;
+
 @mixin buttonReset() {
   outline: 0;
   border: 0;
@@ -22,30 +23,37 @@ $primaryColor: #80c627;
 
 html {
   font-size: 62.5% !important;
+
   @include respond(110em) {
     // 1745
     zoom: 0.85;
   }
+
   @include respond(107em) {
     // 1534
     zoom: 0.78;
   }
+
   @include respond(87.5em) {
     // 1400
     zoom: 1;
   }
+
   @include respond(72em) {
     // 1152
     zoom: 0.9;
   }
+
   @include respond(65em) {
     // 1040
     zoom: 0.8;
   }
+
   @include respond(56.25em) {
     // 900
     zoom: 1;
   }
+
   @include respond(25em) {
     // 400
     zoom: 0.7;
@@ -79,25 +87,30 @@ html {
       object-fit: cover;
       border-radius: 0.8rem;
     }
+
     &:hover .remove-image,
     &:hover .featured-image {
       opacity: 1;
       visibility: visible;
     }
   }
+
   .isFeatured {
-    & > img {
+    &>img {
       border: 4px solid #3a9acd;
     }
   }
+
   .hideFeaturedOption {
     .featured-image {
       display: none;
     }
+
     .remove-image {
       top: -0.8rem;
     }
   }
+
   .featured-image,
   .remove-image {
     @include buttonReset();
@@ -113,23 +126,28 @@ html {
     visibility: hidden;
     padding: 0.3rem;
     cursor: pointer;
-    & > svg {
+
+    &>svg {
       width: 1.4rem;
       height: 1.4rem;
     }
+
     &:hover {
       background-color: $primaryColor;
       color: white;
     }
   }
+
   .featured-image {
     right: 0rem;
     top: -0.8rem;
-    & > svg {
+
+    &>svg {
       width: 1.3rem;
       height: 1.3rem;
     }
   }
+
   .add-new-image {
     height: 7.1rem !important;
     width: 7.1rem !important;
@@ -139,11 +157,13 @@ html {
     place-content: center;
     color: $darkGrey;
     cursor: pointer;
+
     &:hover {
       border-color: $primaryColor;
       color: $primaryColor;
     }
   }
+
   .upload-image {
     height: 4.4rem;
     border: 2px dashed $darkGrey;
@@ -154,9 +174,14 @@ html {
     place-content: center;
     color: #999;
     cursor: pointer;
+
     &:hover {
       border-color: $primaryColor;
       color: $primaryColor;
     }
   }
+}
+
+.object-fit-cover {
+  object-fit: cover !important;
 }
