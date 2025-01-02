@@ -34,7 +34,8 @@ export default class extends Document {
         <Head>
           {/* Google Analytics GA4 */}
           <script
-            defer={true}
+            id="google-tag-manager"
+            // strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -71,11 +72,13 @@ export default class extends Document {
           )}
         </Head>
         <body>
-          {/* <!-- Google Tag Manager (noscript) --> */}
+          {/* Google Tag Manager (noscript) */}
           <noscript
             dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXL5GDL"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+              __html: `
+              <iframe title="no script" src="https://www.googletagmanager.com/ns.html?id=GTM-WXL5GDL"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            `,
             }}
           />
           {/* <!-- End Google Tag Manager (noscript) --> */}
