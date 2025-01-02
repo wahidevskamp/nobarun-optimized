@@ -46,7 +46,7 @@ export default class extends Document {
           `,
             }}
           />
-          {/* <link
+          <link
             rel="preload"
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
             as="style"
@@ -62,7 +62,7 @@ export default class extends Document {
               href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
               rel="stylesheet"
             />
-          </noscript> */}
+          </noscript>
           {/* {process.env.NEXT_PUBLIC_IMAGE_URL && (
             <link
               rel="preconnect"
