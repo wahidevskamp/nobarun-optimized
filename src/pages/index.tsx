@@ -117,7 +117,7 @@ const IndexPage = ({
                     >
                       <Box className="client client_related">
                         <HoverBox borderRadius={5} className="client__body">
-                          <Image
+                          {/* <Image
                             loader={imageLoader}
                             src={item.imgUrl}
                             alt={`Image for ${item.title} client`}
@@ -125,8 +125,8 @@ const IndexPage = ({
                             height="139px"
                             quality={90}
                             className="object-fit-cover"
-                          />
-                          {/* <img
+                          /> */}
+                          <img
                             src={
                               process.env.NEXT_PUBLIC_IMAGE_URL + item.imgUrl
                             }
@@ -134,7 +134,7 @@ const IndexPage = ({
                             width="151px"
                             height="139px"
                             className="object-fit-cover lazyload"
-                          /> */}
+                          />
                         </HoverBox>
                         <p
                           className="client__title"
