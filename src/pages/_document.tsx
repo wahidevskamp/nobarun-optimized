@@ -32,20 +32,6 @@ export default class extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Google Analytics GA4 */}
-          <script
-            id="google-tag-manager"
-            // strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5PKXXJM2');
-          `,
-            }}
-          />
           <link
             rel="preload"
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
@@ -77,6 +63,21 @@ export default class extends Document {
           {/* <!-- End Google Tag Manager (noscript) --> */}
           <Main />
           <NextScript />
+
+          {/* Google Analytics GA4 */}
+          <script
+            id="google-tag-manager"
+            // strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5PKXXJM2');
+          `,
+            }}
+          />
         </body>
       </Html>
     );
