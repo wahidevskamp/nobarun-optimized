@@ -33,7 +33,7 @@ const IndexPage = ({
   const width = useWindowSize();
   const [height, setHeight] = useState(400);
   const isTablet = width < 1025;
-  const isMobile = width <= 768;
+  // const isMobile = width <= 768;
   const heroContainer = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const rect = heroContainer?.current?.getBoundingClientRect();
