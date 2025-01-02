@@ -49,10 +49,7 @@ const IndexPage = ({
           <Box bg="gray.white" mt={isTablet ? '2.5rem' : ''}>
             <Container ref={heroContainer}>
               <StyledCarouselCard1>
-                <div
-                  className="image-holder"
-                  style={{ width: '100%', height: '550px' }}
-                >
+                <div className="image-holder" style={{ width: '100%' }}>
                   <img
                     src={
                       '/assets/images/banners/1-Bakery-Equipment-nobarun.webp'
@@ -60,12 +57,12 @@ const IndexPage = ({
                     alt="Hero Image of Nobarun"
                     // width="100%"
                     // height="100%"
-                    // style={{
-                    //   width: '100%',
-                    //   height: '100%',
-                    //   objectFit: 'cover',
-                    // }}
-                    className="lazyload object-fit-cover"
+                    style={{
+                      objectFit: 'cover',
+                      // width: '100%',
+                      // height: '100%',
+                    }}
+                    // className="lazyload object-fit-cover"
                   />
 
                   {/* <Image
