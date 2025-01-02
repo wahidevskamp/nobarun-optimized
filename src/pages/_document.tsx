@@ -67,6 +67,8 @@ export default class extends Document {
           {/* Google Analytics GA4 */}
           <script
             id="google-tag-manager"
+            async
+            defer
             // strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
