@@ -51,7 +51,7 @@ const IndexPage = ({
               <StyledCarouselCard1>
                 <div
                   className="image-holder"
-                  // style={{ width: '100%', height: '550px' }}
+                  style={{ width: '100%', height: '550px' }}
                 >
                   {/* <img
                     src={
