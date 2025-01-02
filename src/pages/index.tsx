@@ -33,7 +33,7 @@ const IndexPage = ({
   const width = useWindowSize();
   const [height, setHeight] = useState(400);
   const isTablet = width < 1025;
-  // const isMobile = width <= 768;
+  const isMobile = width <= 768;
   const heroContainer = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const rect = heroContainer?.current?.getBoundingClientRect();
@@ -53,7 +53,7 @@ const IndexPage = ({
                   className="image-holder"
                   style={{ width: '100%', height: '550px' }}
                 >
-                  {/* <img
+                  <img
                     src={
                       '/assets/images/banners/1-Bakery-Equipment-nobarun.webp'
                     }
@@ -66,7 +66,7 @@ const IndexPage = ({
                       objectFit: 'cover',
                     }}
                     // className="lazyload"
-                  /> */}
+                  />
 
                   {/* <Image
                     src={`/assets/images/banners/1-Bakery-Equipment-nobarun.webp`}
@@ -83,7 +83,7 @@ const IndexPage = ({
         </Fragment>
 
         <Container className="container-width">
-          {clients && clients.length ? (
+          {!isMobile && clients && clients.length ? (
             <Fragment>
               <FlexBox
                 justifyContent="space-between"
