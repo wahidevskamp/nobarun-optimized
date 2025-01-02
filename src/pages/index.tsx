@@ -117,15 +117,6 @@ const IndexPage = ({
                     >
                       <Box className="client client_related">
                         <HoverBox borderRadius={5} className="client__body">
-                          {/* <Image
-                            loader={imageLoader}
-                            src={item.imgUrl}
-                            alt={`Image for ${item.title} client`}
-                            width="151px"
-                            height="139px"
-                            quality={90}
-                            className="object-fit-cover"
-                          /> */}
                           <img
                             src={
                               process.env.NEXT_PUBLIC_IMAGE_URL + item.imgUrl
