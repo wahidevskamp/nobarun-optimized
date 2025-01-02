@@ -33,7 +33,7 @@ const IndexPage = ({
   const width = useWindowSize();
   const [height, setHeight] = useState(400);
   const isTablet = width < 1025;
-  // const isMobile = width <= 768;
+  const isMobile = width <= 768;
   const heroContainer = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const rect = heroContainer?.current?.getBoundingClientRect();
@@ -83,7 +83,7 @@ const IndexPage = ({
         </Fragment>
 
         <Container className="container-width">
-          {clients && clients.length ? (
+          {!isMobile && clients && clients.length ? (
             <Fragment>
               <FlexBox
                 justifyContent="space-between"
