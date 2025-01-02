@@ -65,7 +65,7 @@ const IndexPage = ({
                     //   height: '100%',
                     //   objectFit: 'cover',
                     // }}
-                    // className="lazyload"
+                    className="lazyload object-fit-cover"
                   />
 
                   {/* <Image
