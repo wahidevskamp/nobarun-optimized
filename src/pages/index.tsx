@@ -83,7 +83,7 @@ const IndexPage = ({
         </Fragment>
 
         <Container className="container-width">
-          {!isMobile && clients && clients.length ? (
+          {clients && clients.length ? (
             <Fragment>
               <FlexBox
                 justifyContent="space-between"
