@@ -250,7 +250,7 @@ const IndexPage = ({
         collections[0].products &&
         collections[0].products.length ? (
           <Box mb="8rem">
-            <Box my="4rem" mx={width < 900 && width > 600 ? '1rem' : '0.5rem'}>
+            <Box my="4rem">
               <Container pb="1rem">
                 <FlexBox
                   justifyContent="space-between"
@@ -408,7 +408,7 @@ const IndexPage = ({
         collections[1].products &&
         collections[1].products.length ? (
           <Box mb="8rem">
-            <Box my="4rem" mx={width < 900 && width > 600 ? '1rem' : '0.5rem'}>
+            <Box my="4rem">
               <Container pb="1rem">
                 <FlexBox
                   justifyContent="space-between"
@@ -567,7 +567,7 @@ const IndexPage = ({
         collections[2].products &&
         collections[2].products.length ? (
           <Box mb="8rem">
-            <Box my="4rem" mx={width < 900 && width > 600 ? '1rem' : '0.5rem'}>
+            <Box my="4rem">
               <Container pb="1rem">
                 <FlexBox
                   justifyContent="space-between"
