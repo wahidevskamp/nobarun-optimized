@@ -58,14 +58,14 @@ const IndexPage = ({
                       '/assets/images/banners/1-Bakery-Equipment-nobarun.webp'
                     }
                     alt="Hero Image of Nobarun"
-                    width="100%"
-                    height="100%"
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                    }}
-                    className="lazyload"
+                    // width="100%"
+                    // height="100%"
+                    // style={{
+                    //   width: '100%',
+                    //   height: '100%',
+                    //   objectFit: 'cover',
+                    // }}
+                    // className="lazyload"
                   />
 
                   {/* <Image
