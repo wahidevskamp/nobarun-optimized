@@ -1,4 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class extends Document {
@@ -65,9 +66,9 @@ export default class extends Document {
           <NextScript />
 
           {/* Google Analytics GA4 */}
-          <script
+          <Script
             id="google-tag-manager"
-            // strategy="afterInteractive"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
