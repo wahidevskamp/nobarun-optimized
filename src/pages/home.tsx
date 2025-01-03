@@ -2,6 +2,7 @@ import { gql } from '@apollo/client';
 import GoToTop from '@component/goToTop/GoToTop';
 import Navbar from '@component/navbar/Navbar';
 import useAllProductCategories from '@hook/Home/useAllProductCategories';
+import Link from 'next/link';
 import AppLayout from '../components/layout/AppLayout';
 import client from '../config/ApolloClient';
 
@@ -50,57 +51,305 @@ const HomePage = ({ categories }) => {
             </div>
             <div className="clients-main-wrap">
               {/* box */}
-              <div className="client-box">
-                <img src="/assets/images/clients/akij.webp" alt="Creative It" />
-                <h6>Creative IT</h6>
-              </div>
+              <Link href="#">
+                <a>
+                  <div className="client-box">
+                    <img
+                      src="/assets/images/clients/akij.webp"
+                      alt="Creative It"
+                    />
+                    <h6>Creative IT</h6>
+                  </div>
+                </a>
+              </Link>
               {/* box */}
               {/* box */}
-              <div className="client-box">
-                <img src="/assets/images/clients/akij.webp" alt="Creative It" />
-                <h6>Creative IT</h6>
-              </div>
+              <Link href="#">
+                <a>
+                  <div className="client-box">
+                    <img
+                      src="/assets/images/clients/akij.webp"
+                      alt="Creative It"
+                    />
+                    <h6>Creative IT</h6>
+                  </div>
+                </a>
+              </Link>
               {/* box */}
               {/* box */}
-              <div className="client-box">
-                <img src="/assets/images/clients/akij.webp" alt="Creative It" />
-                <h6>Creative IT</h6>
-              </div>
+              <Link href="#">
+                <a>
+                  <div className="client-box">
+                    <img
+                      src="/assets/images/clients/akij.webp"
+                      alt="Creative It"
+                    />
+                    <h6>Creative IT</h6>
+                  </div>
+                </a>
+              </Link>
               {/* box */}
               {/* box */}
-              <div className="client-box">
-                <img src="/assets/images/clients/akij.webp" alt="Creative It" />
-                <h6>Creative IT</h6>
-              </div>
+              <Link href="#">
+                <a>
+                  <div className="client-box">
+                    <img
+                      src="/assets/images/clients/akij.webp"
+                      alt="Creative It"
+                    />
+                    <h6>Creative IT</h6>
+                  </div>
+                </a>
+              </Link>
               {/* box */}
               {/* box */}
-              <div className="client-box">
-                <img src="/assets/images/clients/akij.webp" alt="Creative It" />
-                <h6>Creative IT</h6>
-              </div>
+              <Link href="#">
+                <a>
+                  <div className="client-box">
+                    <img
+                      src="/assets/images/clients/akij.webp"
+                      alt="Creative It"
+                    />
+                    <h6>Creative IT</h6>
+                  </div>
+                </a>
+              </Link>
               {/* box */}
               {/* box */}
-              <div className="client-box">
-                <img src="/assets/images/clients/akij.webp" alt="Creative It" />
-                <h6>Creative IT</h6>
-              </div>
+              <Link href="#">
+                <a>
+                  <div className="client-box">
+                    <img
+                      src="/assets/images/clients/akij.webp"
+                      alt="Creative It"
+                    />
+                    <h6>Creative IT</h6>
+                  </div>
+                </a>
+              </Link>
               {/* box */}
               {/* box */}
-              <div className="client-box">
-                <img src="/assets/images/clients/akij.webp" alt="Creative It" />
-                <h6>Creative IT</h6>
-              </div>
+              <Link href="#">
+                <a>
+                  <div className="client-box">
+                    <img
+                      src="/assets/images/clients/akij.webp"
+                      alt="Creative It"
+                    />
+                    <h6>Creative IT</h6>
+                  </div>
+                </a>
+              </Link>
               {/* box */}
               {/* box */}
-              <div className="client-box">
-                <img src="/assets/images/clients/akij.webp" alt="Creative It" />
-                <h6>Creative IT</h6>
-              </div>
+              <Link href="#">
+                <a>
+                  <div className="client-box">
+                    <img
+                      src="/assets/images/clients/akij.webp"
+                      alt="Creative It"
+                    />
+                    <h6>Creative IT</h6>
+                  </div>
+                </a>
+              </Link>
               {/* box */}
             </div>
           </div>
         </section>
         {/* out clients section end */}
+
+        {/* featured categories section start */}
+        <section className="featured-categories-section">
+          <div className="container">
+            <div className="client-heading text-begin">
+              <h2>Featured Categories</h2>
+            </div>
+            <div className="category-main-wrap">
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+              {/* box */}
+              <Link href="#">
+                <a>
+                  <div className="category-box">
+                    <div className="img-placee">
+                      <img
+                        src="/assets/images/categories/category-one.webp"
+                        alt="Creative It"
+                      />
+                    </div>
+                    <h4>Car Parking Management</h4>
+                  </div>
+                </a>
+              </Link>
+              {/* box */}
+            </div>
+          </div>
+        </section>
+        {/* featured categories section end */}
       </main>
     </>
   );
