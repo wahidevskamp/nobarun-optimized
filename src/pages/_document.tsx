@@ -32,23 +32,12 @@ export default class extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* <link
-            rel="preload"
-            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
-            as="font"
-            type="font/woff2"
-          />
+          {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
             rel="stylesheet"
           /> */}
-          {/* {process.env.NEXT_PUBLIC_IMAGE_URL && (
-            <link
-              rel="preconnect"
-              href={new URL(process.env.NEXT_PUBLIC_IMAGE_URL).origin}
-              crossOrigin="anonymous"
-            />
-          )} */}
         </Head>
         <body>
           {/* Google Tag Manager (noscript) */}

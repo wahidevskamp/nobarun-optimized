@@ -30,7 +30,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
           <div className="container">
             <div className="client-heading">
               <h2>Our Clients</h2>
-              <Link href="#">
+              <Link href={`/clients`}>
                 <a>
                   <span>View All</span>
                   <svg
@@ -61,7 +61,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                         <img
                           src={process.env.NEXT_PUBLIC_IMAGE_URL + item.imgUrl}
                           alt={`Image for ${item.title} client`}
-                          className="lazyload"
+                          // className="lazyload"
                         />
                         <p>{item.title}</p>
                       </div>
@@ -90,7 +90,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                             process.env.NEXT_PUBLIC_IMAGE_URL + category.image
                           }
                           alt={`Thumbnail for ${category.name} featured category`}
-                          className="lazyload"
+                          // className="lazyload"
                         />
                       </div>
                       <h4>{category.name}</h4>
