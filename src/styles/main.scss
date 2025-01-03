@@ -389,10 +389,11 @@ html {
 
 // responsive css
 
-@media (max-width: 575px) {
+@media (max-width: 665px) {
   .hero-img {
     margin-left: 0 !important;
     height: 260px !important;
+    display: none;
   }
 
   .hero-img img {
@@ -425,7 +426,7 @@ html {
   }
 }
 
-@media (min-width: 575px) and (max-width: 992px) {
+@media (min-width: 665px) and (max-width: 992px) {
   .hero-img {
     margin-left: 0 !important;
     height: 360px !important;
