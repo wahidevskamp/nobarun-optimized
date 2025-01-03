@@ -392,7 +392,11 @@ html {
 @media (max-width: 575px) {
   .hero-img {
     margin-left: 0 !important;
-    height: 250px !important;
+    height: 260px !important;
+  }
+
+  .hero-img img {
+    object-fit: contain;
   }
 
   .client-heading h2 {
