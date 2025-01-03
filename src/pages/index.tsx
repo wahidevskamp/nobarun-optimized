@@ -3,6 +3,14 @@ import GoToTop from '@component/goToTop/GoToTop';
 import Navbar from '@component/navbar/Navbar';
 import useAllProductCategories from '@hook/Home/useAllProductCategories';
 import Link from 'next/link';
+import {
+  ButtonBack,
+  ButtonNext,
+  CarouselProvider,
+  Slide,
+  Slider,
+} from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 import AppLayout from '../components/layout/AppLayout';
 import client from '../config/ApolloClient';
 
@@ -16,10 +24,82 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
         <section className="hero-section">
           <div className="container">
             <div className="hero-img">
-              <img
-                src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
-                alt="hero"
-              />
+              <CarouselProvider
+                naturalSlideWidth={100}
+                naturalSlideHeight={45}
+                totalSlides={6}
+              >
+                <Slider>
+                  <Slide index={0}>
+                    <img
+                      src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
+                      alt="hero"
+                    />
+                  </Slide>
+                  <Slide index={1}>
+                    <img
+                      src="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
+                      alt="hero"
+                    />
+                  </Slide>
+                  <Slide index={2}>
+                    <img
+                      src="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
+                      alt="hero"
+                    />
+                  </Slide>
+                  <Slide index={3}>
+                    <img
+                      src="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
+                      alt="hero"
+                    />
+                  </Slide>
+                  <Slide index={4}>
+                    <img
+                      src="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
+                      alt="hero"
+                    />
+                  </Slide>
+                  <Slide index={5}>
+                    <img
+                      src="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
+                      alt="hero"
+                    />
+                  </Slide>
+                </Slider>
+                <ButtonBack>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="size-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15.75 19.5 8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </ButtonBack>
+                <ButtonNext>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="size-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </ButtonNext>
+              </CarouselProvider>
             </div>
           </div>
         </section>
