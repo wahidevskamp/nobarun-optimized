@@ -29,45 +29,45 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                 naturalSlideHeight={45}
                 totalSlides={6}
               >
-                <Slider>
-                  <Slide index={0}>
+                <Slider role="listbox" aria-label="Carousel of images">
+                  <Slide index={0} role="option" aria-label="Slide 1 of 6">
                     <img
                       src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
                       alt="hero"
                     />
                   </Slide>
-                  <Slide index={1}>
+                  <Slide index={1} role="option" aria-label="Slide 2 of 6">
                     <img
                       src="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
                       alt="hero"
                     />
                   </Slide>
-                  <Slide index={2}>
+                  <Slide index={2} role="option" aria-label="Slide 3 of 6">
                     <img
                       src="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
                       alt="hero"
                     />
                   </Slide>
-                  <Slide index={3}>
+                  <Slide index={3} role="option" aria-label="Slide 4 of 6">
                     <img
                       src="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
                       alt="hero"
                     />
                   </Slide>
-                  <Slide index={4}>
+                  <Slide index={4} role="option" aria-label="Slide 5 of 6">
                     <img
                       src="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
                       alt="hero"
                     />
                   </Slide>
-                  <Slide index={5}>
+                  <Slide index={5} role="option" aria-label="Slide 6 of 6">
                     <img
                       src="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
                       alt="hero"
                     />
                   </Slide>
                 </Slider>
-                <ButtonBack>
+                <ButtonBack aria-label="Previous Slide">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -83,7 +83,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     />
                   </svg>
                 </ButtonBack>
-                <ButtonNext>
+                <ButtonNext aria-label="Next Slide">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
