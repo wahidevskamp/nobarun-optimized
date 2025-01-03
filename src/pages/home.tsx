@@ -19,6 +19,12 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
               <img
                 src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
                 alt="hero"
+                className="desktop-banner"
+              />
+              <img
+                src="/assets/images/banners/Mobile-hero.webp"
+                alt="hero"
+                className="mobile-banner"
               />
             </div>
           </div>

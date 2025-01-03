@@ -379,6 +379,14 @@ html {
   transform: scale(1);
 }
 
+.desktop-banner {
+  display: block;
+}
+
+.mobile-banner {
+  display: none;
+}
+
 // responsive css
 
 @media (max-width: 575px) {
@@ -403,6 +411,14 @@ html {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .desktop-banner {
+    display: none;
+  }
+
+  .mobile-banner {
+    display: block;
+  }
 }
 
 @media (min-width: 575px) and (max-width: 992px) {
@@ -426,6 +442,14 @@ html {
   .gio-container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .desktop-banner {
+    display: none;
+  }
+
+  .mobile-banner {
+    display: block;
   }
 }
 
