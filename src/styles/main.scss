@@ -379,13 +379,6 @@ html {
   transform: scale(1);
 }
 
-.desktop-banner {
-  display: block;
-}
-
-.mobile-banner {
-  display: none;
-}
 
 // responsive css
 
@@ -393,7 +386,6 @@ html {
   .hero-img {
     margin-left: 0 !important;
     height: 260px !important;
-    display: none;
   }
 
   .hero-img img {
@@ -415,14 +407,6 @@ html {
   .gio-container {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .desktop-banner {
-    display: none;
-  }
-
-  .mobile-banner {
-    display: block;
   }
 }
 
@@ -447,14 +431,6 @@ html {
   .gio-container {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .desktop-banner {
-    display: none;
-  }
-
-  .mobile-banner {
-    display: block;
   }
 }
 
