@@ -5,7 +5,7 @@ import useAllProductCategories from '@hook/Home/useAllProductCategories';
 import AppLayout from '../components/layout/AppLayout';
 import client from '../config/ApolloClient';
 
-const HomePage = ({ clients, categories, featuredCategories, collections }) => {
+const HomePage = ({ categories }) => {
   return (
     <>
       <main>
