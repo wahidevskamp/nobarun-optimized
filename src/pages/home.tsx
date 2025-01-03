@@ -14,7 +14,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
         <Navbar navListOpen={true} height={400} categories={categories} />
         {/* hero section start */}
         <section className="hero-section">
-          <div className="gio-container">
+          <div className="container">
             <div className="hero-img">
               <img
                 src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
@@ -30,24 +30,26 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
           <div className="container">
             <div className="client-heading">
               <h2>Our Clients</h2>
-              <a href="#">
-                <span>View All</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  width="20"
-                  height="20"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </a>
+              <Link href="#">
+                <a>
+                  <span>View All</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </a>
+              </Link>
             </div>
             <div className="clients-main-wrap">
               {clients
