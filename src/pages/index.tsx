@@ -23,31 +23,37 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
-                    alt="hero"
+                    alt="hero Image one"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
-                    alt="hero"
+                    alt="hero Image two"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
-                    alt="hero"
+                    alt="hero Image Three"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
-                    alt="hero"
+                    alt="hero Image Four"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
-                    alt="hero"
+                    alt="hero Image Five"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
+                    alt="hero Image Six"
                   />
                 </SwiperSlide>
               </Swiper>

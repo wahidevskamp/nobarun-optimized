@@ -198,12 +198,13 @@ html {
 }
 
 .hero-img .swiper-slide {
-  height: 530px;
+  height: 513px;
 }
 
 .hero-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .our-clients-section {
