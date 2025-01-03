@@ -52,20 +52,20 @@ export default class extends Document {
         </Head>
         <body>
           {/* Google Tag Manager (noscript) */}
-          <noscript
+          {/* <noscript
             dangerouslySetInnerHTML={{
               __html: `
               <iframe title="no script" src="https://www.googletagmanager.com/ns.html?id=GTM-5PKXXJM2"
               height="0" width="0" style="display:none;visibility:hidden"></iframe>
             `,
             }}
-          />
+          /> */}
           {/* <!-- End Google Tag Manager (noscript) --> */}
           <Main />
           <NextScript />
 
           {/* Google Analytics GA4 */}
-          <script
+          {/* <script
             id="google-tag-manager"
             // strategy="afterInteractive"
             dangerouslySetInnerHTML={{
@@ -77,7 +77,7 @@ export default class extends Document {
             })(window,document,'script','dataLayer','GTM-5PKXXJM2');
           `,
             }}
-          />
+          /> */}
         </body>
       </Html>
     );
