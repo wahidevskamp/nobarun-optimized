@@ -75,7 +75,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
         <section className="featured-categories-section">
           <div className="container">
             <div className="client-heading text-begin">
-              <h2>Featured Categories</h2>
+              <h3>Featured Categories</h3>
             </div>
             <div className="category-main-wrap">
               {featuredCategories.map((category, index) => (
@@ -91,7 +91,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                           className="lazyload"
                         />
                       </div>
-                      <h4>Car Parking Management</h4>
+                      <h4>{category.name}</h4>
                     </div>
                   </a>
                 </Link>
