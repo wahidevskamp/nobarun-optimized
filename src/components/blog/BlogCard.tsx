@@ -5,7 +5,6 @@ import Divider from '@component/Divider';
 import FlexBox from '@component/FlexBox';
 import { H2, Paragraph } from '@component/Typography';
 import Link from 'next/link';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface BlogCardProps {
   postTitle: string;
@@ -21,12 +20,18 @@ const BlogCard = (props: BlogCardProps) => {
       <a>
         <Card px="20px" py="10px" className="blog__card">
           <Box width="100%" textAlign="center" margin="1rem auto 1.5rem">
-            <LazyLoadImage
+            {/* <LazyLoadImage
               src={process.env.NEXT_PUBLIC_IMAGE_URL + image}
               alt={postTitle}
               effect="blur"
               height="100%"
               width="100%"
+            /> */}
+            <img
+              src={process.env.NEXT_PUBLIC_IMAGE_URL + image}
+              alt={`Thumbnail for ${slug} blog post`}
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              // className="lazyload"
             />
           </Box>
           <H2 fontSize="32px" mb="1rem">
