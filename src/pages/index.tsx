@@ -90,12 +90,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   </SwiperSlide>
                 </Swiper>
               </div>
-              <div className="w-full mobile-banner">
-                <img
-                  src="/assets/images/banners/mobile/hero-5.webp"
-                  alt="hero Mobile Image one"
-                />
-              </div>
             </div>
           </div>
         </section>
