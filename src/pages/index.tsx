@@ -24,42 +24,42 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <img
                     src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
                     alt="hero Image one"
-                    loading="lazy"
+                    className="lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
                     alt="hero Image two"
-                    loading="lazy"
+                    className="lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
                     alt="hero Image Three"
-                    loading="lazy"
+                    className="lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
                     alt="hero Image Four"
-                    loading="lazy"
+                    className="lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
                     alt="hero Image Five"
-                    loading="lazy"
+                    className="lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
                     alt="hero Image Six"
-                    loading="lazy"
+                    className="lazyload"
                   />
                 </SwiperSlide>
               </Swiper>
