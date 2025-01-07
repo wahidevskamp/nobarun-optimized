@@ -32,34 +32,54 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     className="mobile-banner"
                   />
                 </SwiperSlide>
-                {/* <SwiperSlide>
+                <SwiperSlide>
                   <img
                     src="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
                     alt="hero Image two"
-                    // className="lazyload"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/2-Slaughterhouse-Equipment-4.webp"
+                    alt="hero Mobile Image two"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
                     alt="hero Image Three"
-                    // className="lazyload"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/3-Supermarket-Equipment-with-logo.webp"
+                    alt="hero Mobile Image Three"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
                     alt="hero Image Four"
-                    // className="lazyload"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/4-Slaughterhouse-Equipment.webp"
+                    alt="hero Mobile Image Four"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
                     alt="hero Image Five"
-                    // className="lazyload"
+                    className="desktop-banner"
                   />
-                </SwiperSlide> */}
+                  <img
+                    src="/assets/images/banners/mobile/5-Metal-Detector-&-Scanning-System.webp"
+                    alt="hero Mobile Image Five"
+                    className="mobile-banner"
+                  />
+                </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
