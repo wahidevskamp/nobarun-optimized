@@ -134,7 +134,8 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                         <img
                           src={process.env.NEXT_PUBLIC_IMAGE_URL + item.imgUrl}
                           alt={`Image for ${item.title} client`}
-                          // className="lazyload"
+                          className="lazyload"
+                          loading="lazy"
                         />
                         <p>{item.title}</p>
                       </div>
