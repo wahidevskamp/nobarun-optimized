@@ -404,12 +404,11 @@ html {
 
   .hero-img img {
     width: 100%;
-    height: 245px;
     object-fit: contain;
   }
 
   .client-heading h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .clients-main-wrap {
@@ -429,7 +428,9 @@ html {
   }
 
   .our-clients-section {
-    display: none;
+    // display: none;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .featured-categories-section {
