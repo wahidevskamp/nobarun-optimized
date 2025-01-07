@@ -6,8 +6,6 @@ import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 
-import imageLoader from '@component/ImageLoader';
-import Image from 'next/image';
 import AppLayout from '../components/layout/AppLayout';
 import client from '../config/ApolloClient';
 
@@ -160,7 +158,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <a>
                     <div className="category-box">
                       <div className="img-placee">
-                        <Image
+                        {/* <Image
                           loader={imageLoader}
                           src={category.image}
                           alt={`Thumbnail for ${category.name} featured category`}
@@ -168,13 +166,13 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                           height="290px"
                           quality={90}
                           className="object-fit-cover lazyload"
-                        />
-                        {/* <img
+                        /> */}
+                        <img
                           src={
                             process.env.NEXT_PUBLIC_IMAGE_URL + category.image
                           }
                           alt={`Thumbnail for ${category.name} featured category`}
-                        /> */}
+                        />
                       </div>
                       <h4>{category.name}</h4>
                     </div>

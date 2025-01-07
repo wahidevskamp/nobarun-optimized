@@ -41,21 +41,21 @@ export default class extends Document {
         </Head>
         <body>
           {/* Google Tag Manager (noscript) */}
-          {/* <noscript
+          <noscript
             dangerouslySetInnerHTML={{
               __html: `
               <iframe title="no script" src="https://www.googletagmanager.com/ns.html?id=GTM-5PKXXJM2"
               height="0" width="0" style="display:none;visibility:hidden"></iframe>
             `,
             }}
-          /> */}
+          />
           {/* <!-- End Google Tag Manager (noscript) --> */}
           <Main />
           <NextScript />
 
           {/* Google Analytics GA4 */}
           {/* Lazy Load GA4 */}
-          {/* <script
+          <script
             id="ga4-loader"
             dangerouslySetInnerHTML={{
               __html: `
@@ -76,7 +76,7 @@ export default class extends Document {
                 });
               `,
             }}
-          /> */}
+          />
         </body>
       </Html>
     );
