@@ -127,7 +127,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                             process.env.NEXT_PUBLIC_IMAGE_URL + category.image
                           }
                           alt={`Thumbnail for ${category.name} featured category`}
-                          // className="lazyload"
                         />
                       </div>
                       <h4>{category.name}</h4>
