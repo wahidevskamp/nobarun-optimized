@@ -24,36 +24,72 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <img
                     src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
                     alt="hero Image one"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/hero-1.webp"
+                    alt="hero Mobile Image one"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
                     alt="hero Image two"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/hero-2.webp"
+                    alt="hero Mobile Image Two"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
                     alt="hero Image Three"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/hero-3.webp"
+                    alt="hero Mobile Image three"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
                     alt="hero Image Four"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/hero-4.webp"
+                    alt="hero Mobile Image four"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
                     alt="hero Image Five"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/hero-5.webp"
+                    alt="hero Mobile Image five"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
                     alt="hero Image Six"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/hero-6.webp"
+                    alt="hero Mobile Image six"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
               </Swiper>
