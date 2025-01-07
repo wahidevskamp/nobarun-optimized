@@ -58,7 +58,7 @@ const App = ({ Component, pageProps }: any) => {
         <meta property="og:title" content="Nobarun International" />
 
         {/* preload */}
-        <link
+        {/* <link
           rel="preload"
           href="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
           as="image"
@@ -87,7 +87,7 @@ const App = ({ Component, pageProps }: any) => {
           rel="preload"
           href="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
           as="image"
-        />
+        /> */}
 
         <script
           defer={true}

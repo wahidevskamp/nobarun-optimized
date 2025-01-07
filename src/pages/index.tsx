@@ -24,42 +24,52 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <img
                     src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
                     alt="hero Image one"
-                    className="lazyload"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.webp"
+                    alt="hero Mobile Image one"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
                   <img
                     src="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
                     alt="hero Image two"
-                    className="lazyload"
+                    // className="lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
                     alt="hero Image Three"
-                    className="lazyload"
+                    // className="lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
                     alt="hero Image Four"
-                    className="lazyload"
+                    // className="lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
                     alt="hero Image Five"
-                    className="lazyload"
+                    // className="lazyload"
                   />
-                </SwiperSlide>
+                </SwiperSlide> */}
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
                     alt="hero Image Six"
-                    className="lazyload"
+                    className="desktop-banner"
+                  />
+                  <img
+                    src="/assets/images/banners/mobile/6-Slaughterhouse-Equipment-nobarun.webp"
+                    alt="hero Mobile Image Six"
+                    className="mobile-banner"
                   />
                 </SwiperSlide>
               </Swiper>
@@ -129,15 +139,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <a>
                     <div className="category-box">
                       <div className="img-placee">
-                        {/* <Image
-                          loader={imageLoader}
-                          src={category.image}
-                          alt={`Thumbnail for ${category.name} featured category`}
-                          width="290px"
-                          height="290px"
-                          quality={90}
-                          className="object-fit-cover lazyload"
-                        /> */}
                         <img
                           src={
                             process.env.NEXT_PUBLIC_IMAGE_URL + category.image
