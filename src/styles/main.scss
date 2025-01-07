@@ -399,7 +399,7 @@ html {
   }
 
   .hero-img .swiper-slide {
-    height: 250px;
+    height: 215px;
   }
 
   .hero-img img {
@@ -415,12 +415,7 @@ html {
   }
 
   .category-main-wrap {
-    grid-template-columns: 1fr;
-  }
-
-  .gio-container {
-    padding-left: 10px;
-    padding-right: 10px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .desktop-banner {
@@ -429,6 +424,25 @@ html {
 
   .mobile-banner {
     display: block;
+  }
+
+  .our-clients-section {
+    display: none;
+  }
+
+  .featured-categories-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .img-placee {
+    height: 195px;
+    width: 195px;
+  }
+
+  .category-box h4 {
+    font-size: 14px;
+    max-width: 85%;
   }
 }
 
@@ -439,7 +453,7 @@ html {
   }
 
   .hero-img .swiper-slide {
-    height: 350px;
+    height: 300px;
   }
 
   .client-heading h2 {
@@ -465,6 +479,25 @@ html {
 
   .mobile-banner {
     display: block;
+  }
+
+  .our-clients-section {
+    display: none;
+  }
+
+  .featured-categories-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .img-placee {
+    height: 195px;
+    width: 195px;
+  }
+
+  .category-box h4 {
+    font-size: 14px;
+    max-width: 85%;
   }
 }
 
