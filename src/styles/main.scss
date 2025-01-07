@@ -399,11 +399,11 @@ html {
   }
 
   .hero-img .swiper-slide {
-    height: 150px;
+    height: 210px;
   }
 
   .hero-img img {
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .client-heading h2 {

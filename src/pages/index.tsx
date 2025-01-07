@@ -29,7 +29,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <img
                     src="/assets/images/banners/mobile/hero-1.webp"
                     alt="hero Image Mobile one"
-                    className="mobile-banner"
+                    className="mobile-banner lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -41,7 +41,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <img
                     src="/assets/images/banners/mobile/hero-2.webp"
                     alt="hero Mobile Image Two"
-                    className="mobile-banner"
+                    className="mobile-banner lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -53,7 +53,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <img
                     src="/assets/images/banners/mobile/hero-3.webp"
                     alt="hero Mobile Image three"
-                    className="mobile-banner"
+                    className="mobile-banner lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -65,7 +65,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <img
                     src="/assets/images/banners/mobile/hero-4.webp"
                     alt="hero Mobile Image four"
-                    className="mobile-banner"
+                    className="mobile-banner lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -77,7 +77,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <img
                     src="/assets/images/banners/mobile/hero-5.webp"
                     alt="hero Mobile Image five"
-                    className="mobile-banner"
+                    className="mobile-banner lazyload"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -89,7 +89,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   <img
                     src="/assets/images/banners/mobile/hero-6.webp"
                     alt="hero Mobile Image six"
-                    className="mobile-banner"
+                    className="mobile-banner lazyload"
                   />
                 </SwiperSlide>
               </Swiper>
