@@ -65,12 +65,12 @@ const App = ({ Component, pageProps }: any) => {
         />
         <link
           rel="preload"
-          href="/assets/images/banners/mobile/hero-1.webp"
+          href="/assets/images/banners/mobile/hero-5.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/mobile/hero-6.webp"
+          href="/assets/images/banners/mobile/hero-5.webp"
           as="image"
         />
         <link
