@@ -58,7 +58,7 @@ const App = ({ Component, pageProps }: any) => {
         <meta property="og:title" content="Nobarun International" />
 
         {/* preload */}
-        {/* <link
+        <link
           rel="preload"
           href="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
           as="image"
@@ -67,7 +67,27 @@ const App = ({ Component, pageProps }: any) => {
           rel="preload"
           href="/assets/images/banners/mobile/hero-1.webp"
           as="image"
-        /> */}
+        />
+        <link
+          rel="preload"
+          href="/assets/images/banners/mobile/hero-2.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="/assets/images/banners/mobile/hero-3.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="/assets/images/banners/mobile/hero-4.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="/assets/images/banners/mobile/hero-5.webp"
+          as="image"
+        />
         <link
           rel="preload"
           href="/assets/images/banners/mobile/hero-6.webp"
