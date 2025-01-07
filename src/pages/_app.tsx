@@ -57,6 +57,28 @@ const App = ({ Component, pageProps }: any) => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Nobarun International" />
 
+        {/* preload */}
+        <link
+          rel="preload"
+          href="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="/assets/images/banners/mobile/hero-1.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="/assets/images/banners/mobile/hero-6.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
+          as="image"
+        />
+
         <script
           defer={true}
           type="application/ld+json"
