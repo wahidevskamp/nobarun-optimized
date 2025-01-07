@@ -18,7 +18,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
         {/* hero section start */}
         <section className="hero-section">
           <div className="container">
-            <div className="hero-img">
+            <div className="hero-img desktop-banner">
               <Swiper navigation={false} pagination={false} loop={true}>
                 <SwiperSlide>
                   <img
@@ -93,6 +93,13 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   />
                 </SwiperSlide>
               </Swiper>
+            </div>
+            <div className="hero-img mobile-banner">
+              <img
+                src="https://i.ibb.co.com/ZG8LbzW/hero-1.webp"
+                alt="hero Image Mobile one size"
+                className="lazyload"
+              />
             </div>
           </div>
         </section>
