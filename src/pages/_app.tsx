@@ -58,19 +58,19 @@ const App = ({ Component, pageProps }: any) => {
         <meta property="og:title" content="Nobarun International" />
 
         {/* preload */}
-        <link
+        {/* <link
           rel="preload"
           href="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/mobile/hero-5.webp"
+          href="/assets/images/banners/mobile/hero-1.webp"
           as="image"
-        />
+        /> */}
         <link
           rel="preload"
-          href="/assets/images/banners/mobile/hero-5.webp"
+          href="/assets/images/banners/mobile/hero-6.webp"
           as="image"
         />
         <link
