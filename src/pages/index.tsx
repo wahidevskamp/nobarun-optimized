@@ -2,11 +2,11 @@ import { gql } from '@apollo/client';
 import GoToTop from '@component/goToTop/GoToTop';
 import Navbar from '@component/navbar/Navbar';
 import useAllProductCategories from '@hook/Home/useAllProductCategories';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 
-import Image from 'next/image';
 import AppLayout from '../components/layout/AppLayout';
 import client from '../config/ApolloClient';
 
@@ -20,7 +20,13 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
         <section className="hero-section">
           <div className="container">
             <div className="hero-img">
-              <Swiper navigation={false} pagination={false} loop={true}>
+              <Swiper
+                navigation={false}
+                pagination={false}
+                loop={true}
+                lazy={true}
+                preloadImages={false}
+              >
                 <SwiperSlide>
                   <img
                     src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
@@ -36,87 +42,32 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     priority
                     layout="responsive"
                   />
+                  {/* <div className="swiper-lazy-preloader"></div> */}
                 </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
-                    alt="hero Image two"
-                    className="desktop-banner"
-                  />
-                  <Image
-                    src="/assets/images/banners/mobile/2-Slaughterhouse-Equipment-4.webp"
-                    width={550}
-                    height={245}
-                    alt="hero Mobile Image two"
-                    className="mobile-banner"
-                    priority
-                    layout="responsive"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
-                    alt="hero Image Three"
-                    className="desktop-banner"
-                  />
-                  <Image
-                    src="/assets/images/banners/mobile/3-Supermarket-Equipment-with-logo.webp"
-                    width={550}
-                    height={245}
-                    alt="hero Mobile Image three"
-                    className="mobile-banner"
-                    priority
-                    layout="responsive"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
-                    alt="hero Image Four"
-                    className="desktop-banner"
-                  />
-                  <Image
-                    src="/assets/images/banners/mobile/4-Slaughterhouse-Equipment.webp"
-                    width={550}
-                    height={245}
-                    alt="hero Mobile Image Four"
-                    className="mobile-banner"
-                    priority
-                    layout="responsive"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
-                    alt="hero Image Five"
-                    className="desktop-banner"
-                  />
-                  <Image
-                    src="/assets/images/banners/mobile/5-Metal-Detector-&-Scanning-System.webp"
-                    width={550}
-                    height={245}
-                    alt="hero Mobile Image Five"
-                    className="mobile-banner"
-                    priority
-                    layout="responsive"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
-                    alt="hero Image Six"
-                    className="desktop-banner"
-                  />
-                  <Image
-                    src="/assets/images/banners/mobile/6-Slaughterhouse-Equipment-nobarun.jpg"
-                    width={550}
-                    height={245}
-                    alt="hero Mobile Image Six"
-                    className="mobile-banner"
-                    priority
-                    layout="responsive"
-                  />
-                </SwiperSlide>
+                {[
+                  '/assets/images/banners/2-Slaughterhouse-Equipment-4.webp',
+                  '/assets/images/banners/3-Supermarket-Equipment-with-logo.webp',
+                  '/assets/images/banners/4-Slaughterhouse-Equipment.webp',
+                  '/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp',
+                  '/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp',
+                ].map((src, index) => (
+                  <SwiperSlide key={index}>
+                    <img
+                      src={src.replace('/mobile/', '/')}
+                      alt={`hero Image ${index + 2}`}
+                      className="desktop-banner"
+                    />
+                    <Image
+                      src={src}
+                      width={550}
+                      height={245}
+                      alt={`hero Mobile Image ${index + 2}`}
+                      className="mobile-banner"
+                      layout="responsive"
+                      decoding="sync"
+                    />
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>

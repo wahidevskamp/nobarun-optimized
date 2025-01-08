@@ -455,8 +455,10 @@ html {
     width: 100%;
   }
 
-  .hero-img .swiper-slide {
-    height: 300px;
+  .hero-img {
+    position: relative;
+    height: 245px;
+    overflow: hidden;
   }
 
   .client-heading h2 {
