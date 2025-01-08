@@ -415,6 +415,14 @@ html {
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .clients-main-wrap>*:nth-child(n+5) {
+    display: none;
+  }
+
+  .clients-main-wrap .client-box {
+    width: 100%;
+  }
+
   .category-main-wrap {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -428,14 +436,13 @@ html {
   }
 
   .our-clients-section {
-    // display: none;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .featured-categories-section {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .img-placee {
@@ -449,9 +456,13 @@ html {
   }
 
   .client-box img {
-    width: 114px;
-    aspect-ratio: auto 111/90;
-    height: auto;
+    width: 100%;
+    // aspect-ratio: auto 111/90;
+    object-fit: contain;
+  }
+
+  .client-box:hover:before {
+    height: 100%;
   }
 
   .client-box {
