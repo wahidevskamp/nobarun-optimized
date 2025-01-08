@@ -55,7 +55,7 @@ export default class extends Document {
 
           {/* Google Analytics GA4 */}
           {/* Lazy Load GA4 */}
-          <script
+          {/* <script
             id="ga4-loader"
             dangerouslySetInnerHTML={{
               __html: `
@@ -76,7 +76,7 @@ export default class extends Document {
                 });
               `,
             }}
-          />
+          /> */}
         </body>
       </Html>
     );
