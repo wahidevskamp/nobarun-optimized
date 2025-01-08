@@ -60,32 +60,32 @@ const App = ({ Component, pageProps }: any) => {
         {/* preload */}
         <link
           rel="preload"
-          href="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.webp"
+          href="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/mobile/2-Slaughterhouse-Equipment-4.webp"
+          href="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/mobile/3-Supermarket-Equipment-with-logo.webp"
+          href="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/mobile/4-Slaughterhouse-Equipment.webp"
+          href="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/mobile/5-Metal-Detector-&-Scanning-System.webp"
+          href="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/mobile/6-Slaughterhouse-Equipment-nobarun.webp"
+          href="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
           as="image"
         />
 
