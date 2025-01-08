@@ -36,11 +36,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     priority
                     layout="responsive"
                   />
-                  {/* <img
-                    src="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.webp"
-                    alt="hero Mobile Image one"
-                    className="mobile-banner"
-                  /> */}
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
@@ -48,10 +43,14 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Image two"
                     className="desktop-banner"
                   />
-                  <img
+                  <Image
                     src="/assets/images/banners/mobile/2-Slaughterhouse-Equipment-4.webp"
+                    width={550}
+                    height={245}
                     alt="hero Mobile Image two"
                     className="mobile-banner"
+                    priority
+                    layout="responsive"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -60,10 +59,14 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Image Three"
                     className="desktop-banner"
                   />
-                  <img
+                  <Image
                     src="/assets/images/banners/mobile/3-Supermarket-Equipment-with-logo.webp"
-                    alt="hero Mobile Image Three"
+                    width={550}
+                    height={245}
+                    alt="hero Mobile Image three"
                     className="mobile-banner"
+                    priority
+                    layout="responsive"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -72,10 +75,14 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Image Four"
                     className="desktop-banner"
                   />
-                  <img
+                  <Image
                     src="/assets/images/banners/mobile/4-Slaughterhouse-Equipment.webp"
+                    width={550}
+                    height={245}
                     alt="hero Mobile Image Four"
                     className="mobile-banner"
+                    priority
+                    layout="responsive"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -84,10 +91,14 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Image Five"
                     className="desktop-banner"
                   />
-                  <img
+                  <Image
                     src="/assets/images/banners/mobile/5-Metal-Detector-&-Scanning-System.webp"
+                    width={550}
+                    height={245}
                     alt="hero Mobile Image Five"
                     className="mobile-banner"
+                    priority
+                    layout="responsive"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -96,10 +107,14 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Image Six"
                     className="desktop-banner"
                   />
-                  <img
+                  <Image
                     src="/assets/images/banners/mobile/6-Slaughterhouse-Equipment-nobarun.webp"
+                    width={550}
+                    height={245}
                     alt="hero Mobile Image Six"
                     className="mobile-banner"
+                    priority
+                    layout="responsive"
                   />
                 </SwiperSlide>
               </Swiper>
