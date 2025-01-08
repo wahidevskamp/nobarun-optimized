@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 
+import Image from 'next/image';
 import AppLayout from '../components/layout/AppLayout';
 import client from '../config/ApolloClient';
 
@@ -26,11 +27,19 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Image one"
                     className="desktop-banner"
                   />
-                  <img
+                  <Image
+                    src="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.webp"
+                    width={550}
+                    height={245}
+                    alt="hero Mobile Image one"
+                    className="mobile-banner"
+                    priority
+                  />
+                  {/* <img
                     src="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.webp"
                     alt="hero Mobile Image one"
                     className="mobile-banner"
-                  />
+                  /> */}
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
