@@ -40,7 +40,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     className="mobile-banner"
                     priority
                     layout="responsive"
-                    decoding="sync"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
