@@ -13,7 +13,7 @@ import client from '../config/ApolloClient';
 const HomePage = ({ clients, categories, featuredCategories }) => {
   return (
     <>
-      <main>
+      <main className="home-page">
         <GoToTop showBelow={250} />
         <Navbar navListOpen={true} height={400} categories={categories} />
         {/* hero section start */}

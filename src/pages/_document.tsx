@@ -32,12 +32,12 @@ export default class extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
             rel="stylesheet"
-          /> */}
+          />
         </Head>
         <body>
           {/* Google Tag Manager (noscript) */}
@@ -55,7 +55,7 @@ export default class extends Document {
 
           {/* Google Analytics GA4 */}
           {/* Lazy Load GA4 */}
-          {/* <script
+          <script
             id="ga4-loader"
             dangerouslySetInnerHTML={{
               __html: `
@@ -76,7 +76,7 @@ export default class extends Document {
                 });
               `,
             }}
-          /> */}
+          />
         </body>
       </Html>
     );

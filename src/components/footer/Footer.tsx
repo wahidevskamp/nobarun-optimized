@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
         ))}
       </FlexBox>
       <Typography py="0.8rem" fontSize="18px" fontWeight="600">
-        Copyright @Nobarun International (2017-2022)
+        Copyright @Nobarun International (2017-2025)
       </Typography>
     </Grid>
   );

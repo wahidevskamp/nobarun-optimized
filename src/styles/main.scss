@@ -412,7 +412,7 @@ html {
   }
 
   .clients-main-wrap {
-    grid-template-columns: repeat(2, minmax(151px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .category-main-wrap {
@@ -446,6 +446,24 @@ html {
   .category-box h4 {
     font-size: 14px;
     max-width: 85%;
+  }
+
+  .client-box img {
+    width: 114px;
+    aspect-ratio: auto 111/90;
+    height: auto;
+  }
+
+  .client-box {
+    height: 135px;
+  }
+
+  .client-box p {
+    font-size: 1.25rem;
+  }
+
+  html {
+    zoom: 0.8 !important;
   }
 }
 
@@ -484,10 +502,6 @@ html {
 
   .mobile-banner {
     display: block;
-  }
-
-  .our-clients-section {
-    display: none;
   }
 
   .featured-categories-section {
