@@ -19,7 +19,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
         {/* hero section start */}
         <section className="hero-section">
           <div className="container">
-            <div className="hero-img">
+            <div className="hero-img desktop-banner">
               <Swiper navigation={false} pagination={false} loop={true}>
                 <SwiperSlide>
                   <img
@@ -35,9 +35,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     className="mobile-banner"
                     priority
                     layout="responsive"
-                    sizes="(max-width: 768px) 100vw, 550px"
-                    placeholder="blur"
-                    blurDataURL="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.jpg"
                   />
                   {/* <img
                     src="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.webp"
@@ -106,6 +103,17 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   />
                 </SwiperSlide>
               </Swiper>
+            </div>
+            <div className="hero-img mobile-banner">
+              <Image
+                src="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.jpg"
+                width={550}
+                height={245}
+                alt="hero Mobile Image one"
+                className="mobile-banner"
+                priority
+                layout="responsive"
+              />
             </div>
           </div>
         </section>
