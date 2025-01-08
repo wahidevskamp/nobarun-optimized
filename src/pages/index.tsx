@@ -34,7 +34,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.jpg"
+                    src="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image one"
@@ -42,7 +42,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     priority
                     layout="responsive"
                   />
-                  {/* <div className="swiper-lazy-preloader"></div> */}
                 </SwiperSlide>
                 {[
                   '/assets/images/banners/2-Slaughterhouse-Equipment-4.webp',
