@@ -32,12 +32,36 @@ export default class extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* Preconnect to Google Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+
+          {/* Preload the font */}
+          <link
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
+          />
+
+          {/* Defer loading of the stylesheet */}
           <link
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
             rel="stylesheet"
+            media="print"
+            // onLoad="this.media='all'"
           />
+
+          {/* Fallback for users with JavaScript disabled */}
+          <noscript>
+            <link
+              href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
+              rel="stylesheet"
+            />
+          </noscript>
         </Head>
         <body>
           {/* Google Tag Manager (noscript) */}
