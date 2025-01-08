@@ -24,7 +24,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                 navigation={false}
                 pagination={false}
                 loop={true}
-                lazy={true}
+                // lazy={true}
               >
                 <SwiperSlide>
                   <img
