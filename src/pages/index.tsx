@@ -24,7 +24,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                 navigation={false}
                 pagination={false}
                 loop={true}
-                // lazy={true}
+                lazy={true}
               >
                 <SwiperSlide>
                   <img
@@ -37,7 +37,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     width={550}
                     height={245}
                     alt="hero Mobile Image one"
-                    className="mobile-banner"
+                    className="mobile-banner lazy"
                     priority
                     layout="responsive"
                   />
