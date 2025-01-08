@@ -36,6 +36,8 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     priority
                     layout="responsive"
                     sizes="(max-width: 768px) 100vw, 550px"
+                    placeholder="blur"
+                    blurDataURL="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.jpg"
                   />
                   {/* <img
                     src="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.webp"
