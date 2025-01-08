@@ -55,7 +55,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     height={245}
                     alt="hero Mobile Image two"
                     className="mobile-banner"
-                    priority
                     layout="responsive"
                   />
                 </SwiperSlide>
@@ -71,7 +70,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     height={245}
                     alt="hero Mobile Image three"
                     className="mobile-banner"
-                    priority
                     layout="responsive"
                   />
                 </SwiperSlide>
@@ -87,7 +85,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     height={245}
                     alt="hero Mobile Image Four"
                     className="mobile-banner"
-                    priority
                     layout="responsive"
                   />
                 </SwiperSlide>
@@ -103,7 +100,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     height={245}
                     alt="hero Mobile Image Five"
                     className="mobile-banner"
-                    priority
                     layout="responsive"
                   />
                 </SwiperSlide>
@@ -119,7 +115,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     height={245}
                     alt="hero Mobile Image Six"
                     className="mobile-banner"
-                    priority
                     layout="responsive"
                   />
                 </SwiperSlide>
@@ -273,7 +268,7 @@ export async function getStaticProps() {
         collections,
         count,
       },
-      revalidate: 10,
+      revalidate: 40,
     };
   }
 }
