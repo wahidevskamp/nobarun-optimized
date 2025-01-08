@@ -108,7 +108,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/6-Slaughterhouse-Equipment-nobarun.webp"
+                    src="/assets/images/banners/mobile/6-Slaughterhouse-Equipment-nobarun.jpg"
                     width={550}
                     height={245}
                     alt="hero Mobile Image Six"

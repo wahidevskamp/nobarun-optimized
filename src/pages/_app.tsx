@@ -36,7 +36,7 @@ const App = ({ Component, pageProps }: any) => {
         <link
           rel="preload"
           as="image"
-          href="/assets/images/banners/mobile/6-Slaughterhouse-Equipment-nobarun.webp"
+          href="/assets/images/banners/mobile/6-Slaughterhouse-Equipment-nobarun.jpg"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Nobarun International</title>
