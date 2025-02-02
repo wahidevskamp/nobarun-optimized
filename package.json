@@ -4,8 +4,8 @@
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider next -p 4000",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider next build",
-    "build-static-page": "cross-env NODE_OPTIONS=--openssl-legacy-provider next build && next export",
     "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider next start -p 4000",
+    "build-static-page": "cross-env NODE_OPTIONS=--openssl-legacy-provider next build && next export",
     "type-check": "tsc",
     "heroku-postbuild": "npm run build"
   },

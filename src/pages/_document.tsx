@@ -68,7 +68,7 @@ export default class extends Document {
           <noscript
             dangerouslySetInnerHTML={{
               __html: `
-              <iframe title="no script" src="https://www.googletagmanager.com/ns.html?id=GTM-5PKXXJM2"
+              <iframe title="no script" src="https://www.googletagmanager.com/ns.html?id=GTM-WXL5GDL"
               height="0" width="0" style="display:none;visibility:hidden"></iframe>
             `,
             }}
@@ -85,7 +85,7 @@ export default class extends Document {
               __html: `
                 document.addEventListener('DOMContentLoaded', function () {
                   var gaScript = document.createElement('script');
-                  gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX';
+                  gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=GTM-WXL5GDL';
                   gaScript.async = true;
                   document.head.appendChild(gaScript);
 
@@ -95,7 +95,7 @@ export default class extends Document {
                       window.dataLayer.push(arguments);
                     }
                     gtag('js', new Date());
-                    gtag('config', 'G-XXXXXXX');
+                    gtag('config', 'GTM-WXL5GDL');
                   };
                 });
               `,
