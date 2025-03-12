@@ -28,12 +28,12 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
               >
                 <SwiperSlide>
                   <img
-                    src="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
+                    src="/assets/images/banners/slider-1.webp"
                     alt="hero Image one"
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.webp"
+                    src="/assets/images/banners/mobile/slider-2.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image one"
@@ -44,12 +44,12 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
+                    src="/assets/images/banners/slider-2.webp"
                     alt="hero Image two"
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/2-Slaughterhouse-Equipment-4.webp"
+                    src="/assets/images/banners/mobile/slider-2.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image two"
@@ -59,12 +59,12 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
+                    src="/assets/images/banners/slider-3.webp"
                     alt="hero Image Three"
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/3-Supermarket-Equipment-with-logo.webp"
+                    src="/assets/images/banners/mobile/slider-3.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image three"
@@ -74,12 +74,12 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
+                    src="/assets/images/banners/slider-4.webp"
                     alt="hero Image Four"
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/4-Slaughterhouse-Equipment.webp"
+                    src="/assets/images/banners/mobile/slider-4.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image Four"
@@ -89,12 +89,12 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
+                    src="/assets/images/banners/slider-5.webp"
                     alt="hero Image Five"
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/5-Metal-Detector-&-Scanning-System.webp"
+                    src="/assets/images/banners/mobile/slider-5.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image Five"
@@ -104,12 +104,12 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
-                    src="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
+                    src="/assets/images/banners/slider-6.webp"
                     alt="hero Image Six"
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/6-Slaughterhouse-Equipment-nobarun.webp"
+                    src="/assets/images/banners/mobile/slider-6.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image Six"
