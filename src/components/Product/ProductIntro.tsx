@@ -147,7 +147,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
     </a>
   );
   return (
-    <Card position="relative">
+    <Card position="relative" paddingBottom="1rem">
       <Modal
         open={modalOpen}
         onClose={() => {
@@ -302,8 +302,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
                   style={{
                     objectFit: 'contain',
                     width: '100%',
-                    height: '80%',
-                    maxHeight: '587px',
+                    maxHeight: '480px',
                   }}
                 />
               )
