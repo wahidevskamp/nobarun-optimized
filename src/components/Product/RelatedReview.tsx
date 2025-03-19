@@ -147,7 +147,7 @@ const RelatedReview = ({ title, reviews, slug, reviewCount }) => {
           </FlexBox>
 
           {reviews.slice(0, slice).map((review, idx) => (
-            <Box marginBottom="2rem" key={review.name + idx}>
+            <Box marginBottom="1rem" key={review.name + idx}>
               <FlexBox alignItems="center">
                 {review && review.featuredImage && (
                   <img
@@ -157,7 +157,7 @@ const RelatedReview = ({ title, reviews, slug, reviewCount }) => {
                     style={{ height: '8rem', width: '8rem' }}
                   />
                 )}
-                <Box ml="2em">
+                <Box ml="0em">
                   <H3 mt="0.5rem" fontWeight="700" fontSize="2.5rem">
                     {review.name}
                   </H3>
@@ -172,17 +172,26 @@ const RelatedReview = ({ title, reviews, slug, reviewCount }) => {
                     size="large"
                     readonly
                     color="warn"
-                    style={{ padding: '.5em 0 1.5em' }}
+                    // style={{ padding: '.5em 0 1.5em' }}
                   />
                 </Box>
               </FlexBox>
-              <Span color="gray.700" fontSize="2.2rem">
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: review?.reviewText,
-                  }}
-                />
-              </Span>
+              {review?.reviewText &&
+                review.reviewText
+                  .replace(/<(p|div)>\s*(<br>|&nbsp;)*\s*<\/\1>/gi, '')
+                  .trim() && (
+                  <Span
+                    fontSize="2.2rem"
+                    marginTop="1.5em"
+                    color="gray.700"
+                    textAlign="justify"
+                  >
+                    <div
+                      dangerouslySetInnerHTML={{ __html: review.reviewText }}
+                    />
+                  </Span>
+                )}
+
               <Box className="product-images" mt="2rem">
                 {review?.reviewMedia?.images.map((image, idx) => {
                   if (

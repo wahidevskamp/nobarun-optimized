@@ -136,7 +136,8 @@ const ProductDetails = ({ schema, slug, product, reviews, reviewCount }) => {
                               style={{
                                 width: '100%',
                                 height: '100%',
-                                objectFit: 'contain',
+                                maxHeight: '155px',
+                                objectFit: 'cover',
                               }}
                             />
                           </HoverBox>
