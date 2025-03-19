@@ -11,7 +11,7 @@ import useWindowSize from '@hook/useWindowSize';
 import { format } from 'date-fns';
 import getYoutubeId from 'helpers/getYoutubeId';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const RelatedReview = ({ title, reviews, slug, reviewCount }) => {
   const width = useWindowSize();
@@ -147,12 +147,16 @@ const RelatedReview = ({ title, reviews, slug, reviewCount }) => {
           </FlexBox>
 
           {reviews.slice(0, slice).map((review, idx) => (
-            <Box marginBottom="8rem" key={review.name + idx}>
+            <Box marginBottom="2rem" key={review.name + idx}>
               <FlexBox alignItems="center">
-                {review && review.featuredImage && <img
-                  src={process.env.NEXT_PUBLIC_IMAGE_URL + review.featuredImage}
-                  style={{ height: '8rem', width: '8rem' }}
-                />}
+                {review && review.featuredImage && (
+                  <img
+                    src={
+                      process.env.NEXT_PUBLIC_IMAGE_URL + review.featuredImage
+                    }
+                    style={{ height: '8rem', width: '8rem' }}
+                  />
+                )}
                 <Box ml="2em">
                   <H3 mt="0.5rem" fontWeight="700" fontSize="2.5rem">
                     {review.name}
@@ -286,28 +290,28 @@ const RelatedReview = ({ title, reviews, slug, reviewCount }) => {
               </button>
             </Box>
           )}
-          {
-            reviewCount && reviewCount>MAX_INITIAL_DISPLAY ?
-              <Box textAlign="center" mt="4rem">
-                <Link href={`/${slug}/reviews`}>
-                  <a className="client_load-btn"
-                     style={{
-                        display:"inline-block",
-                        padding:"10px 40px",
-                        backgroundColor: '#d2d2d2',
-                        color: '#ec1c24',
-                        borderRadius: '2rem',
-                        width: '18.4rem',
-                        height: '4.9rem',
-                        fontWeight: 600,
-                        fontSize: '1.8rem'}}>
-                    Load More
-                  </a>
-                </Link>
-              </Box>
-              :
-              null
-          }
+          {reviewCount && reviewCount > MAX_INITIAL_DISPLAY ? (
+            <Box textAlign="center" mt="4rem">
+              <Link href={`/${slug}/reviews`}>
+                <a
+                  className="client_load-btn"
+                  style={{
+                    display: 'inline-block',
+                    padding: '10px 40px',
+                    backgroundColor: '#d2d2d2',
+                    color: '#ec1c24',
+                    borderRadius: '2rem',
+                    width: '18.4rem',
+                    height: '4.9rem',
+                    fontWeight: 600,
+                    fontSize: '1.8rem',
+                  }}
+                >
+                  Load More
+                </a>
+              </Link>
+            </Box>
+          ) : null}
         </Box>
       </Card>
     </div>

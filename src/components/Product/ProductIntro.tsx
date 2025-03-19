@@ -303,6 +303,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
                     objectFit: 'contain',
                     width: '100%',
                     height: '80%',
+                    maxHeight: '587px',
                   }}
                 />
               )
