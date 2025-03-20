@@ -39,7 +39,7 @@
     "react-svg": "^11.2.1",
     "styled-components": "^5.2.1",
     "styled-system": "^5.1.5",
-    "swiper": "^6.8.4",
+    "swiper": "^11.2.6",
     "yup": "^0.32.8"
   },
   "devDependencies": {

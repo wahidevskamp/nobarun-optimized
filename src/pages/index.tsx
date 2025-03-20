@@ -3,8 +3,16 @@ import GoToTop from '@component/goToTop/GoToTop';
 import Navbar from '@component/navbar/Navbar';
 import useAllProductCategories from '@hook/Home/useAllProductCategories';
 import Link from 'next/link';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import {
+  A11y,
+  Autoplay,
+  Navigation,
+  Pagination,
+  Scrollbar,
+} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.min.css';
 
 import Image from 'next/image';
 import AppLayout from '../components/layout/AppLayout';
@@ -21,10 +29,10 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
           <div className="container">
             <div className="hero-img">
               <Swiper
-                navigation={false}
-                pagination={false}
                 loop={true}
-                lazy={true}
+                speed={1000}
+                autoplay={{ delay: 3000 }}
+                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
               >
                 <SwiperSlide>
                   <img
@@ -33,7 +41,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/slider-2.webp"
+                    src="/assets/images/banners/mobile/slider-1.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image one"
@@ -102,21 +110,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     layout="responsive"
                   />
                 </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    src="/assets/images/banners/slider-6.webp"
-                    alt="hero Image Six"
-                    className="desktop-banner"
-                  />
-                  <Image
-                    src="/assets/images/banners/mobile/slider-6.webp"
-                    width={550}
-                    height={245}
-                    alt="hero Mobile Image Six"
-                    className="mobile-banner"
-                    layout="responsive"
-                  />
-                </SwiperSlide>
               </Swiper>
             </div>
           </div>
@@ -135,14 +128,14 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     stroke="currentColor"
                     width="20"
                     height="20"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
                     />
                   </svg>

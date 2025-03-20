@@ -31,7 +31,7 @@ const App = ({ Component, pageProps }: any) => {
         <link
           rel="preload"
           as="image"
-          href="/assets/images/banners/mobile/1-Bakery-Equipment-nobarun.webp"
+          href="/assets/images/banners/mobile/slider-1.webp"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Nobarun International</title>
@@ -65,32 +65,27 @@ const App = ({ Component, pageProps }: any) => {
         {/* preload */}
         <link
           rel="preload"
-          href="/assets/images/banners/1-Bakery-Equipment-nobarun.webp"
+          href="/assets/images/banners/slider-1.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/2-Slaughterhouse-Equipment-4.webp"
+          href="/assets/images/banners/slider-2.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/3-Supermarket-Equipment-with-logo.webp"
+          href="/assets/images/banners/slider-3.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/4-Slaughterhouse-Equipment.webp"
+          href="/assets/images/banners/slider-4.webp"
           as="image"
         />
         <link
           rel="preload"
-          href="/assets/images/banners/5-Metal-Detector-&-Scanning-System.webp"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="/assets/images/banners/6-Slaughterhouse-Equipment-nobarun.webp"
+          href="/assets/images/banners/slider-5.webp"
           as="image"
         />
 
