@@ -64,7 +64,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Mobile Image two"
                     className="mobile-banner"
                     layout="responsive"
-                    loading="lazy"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -81,7 +80,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Mobile Image three"
                     className="mobile-banner"
                     layout="responsive"
-                    loading="lazy"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -98,7 +96,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Mobile Image Four"
                     className="mobile-banner"
                     layout="responsive"
-                    loading="lazy"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -115,7 +112,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Mobile Image Five"
                     className="mobile-banner"
                     layout="responsive"
-                    loading="lazy"
                   />
                 </SwiperSlide>
               </Swiper>
