@@ -48,7 +48,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     className="mobile-banner lazy"
                     priority
                     layout="responsive"
-                    loading="lazy"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
