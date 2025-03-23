@@ -384,7 +384,8 @@ html {
 
 .desktop-banner {
   display: block;
-  object-fit: contain !important;
+  height: 100%;
+  object-fit: fill !important;
 }
 
 .mobile-banner {
@@ -400,7 +401,11 @@ html {
   }
 
   .hero-img .swiper-slide {
-    height: 245px;
+    height: 178px;
+  }
+
+  .featured-categories-section {
+    padding-top: 20px !important;
   }
 
   .hero-img img {
@@ -434,6 +439,7 @@ html {
 
   .mobile-banner {
     display: block;
+    object-fit: fill !important;
   }
 
   .our-clients-section {
