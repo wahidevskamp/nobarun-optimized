@@ -147,7 +147,12 @@ const RelatedReview = ({ title, reviews, slug, reviewCount }) => {
           </FlexBox>
 
           {reviews.slice(0, slice).map((review, idx) => (
-            <Box marginBottom="1rem" key={review.name + idx}>
+            <Box
+              marginBottom="0.75rem"
+              paddingBottom="0.75rem"
+              borderBottom={'1px solid #ddd'}
+              key={review.name + idx}
+            >
               <FlexBox alignItems="center">
                 {review && review.featuredImage && (
                   <img
