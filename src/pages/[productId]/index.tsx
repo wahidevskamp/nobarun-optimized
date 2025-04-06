@@ -122,7 +122,9 @@ const ProductDetails = ({ schema, slug, product, reviews, reviewCount }) => {
                 </FlexBox>
                 <Grid container spacing={4}>
                   {product.clients
-                    .filter((item, index) => item && index < 7)
+                    .filter(
+                      (item, index) => item && index < (isTabPhone ? 4 : 6),
+                    )
                     .map((item, index) => (
                       <Grid item lg={2} md={2} sm={2} xs={3} key={index + 1}>
                         <Box className="client client_related" mr="1rem">

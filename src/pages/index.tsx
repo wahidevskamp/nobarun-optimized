@@ -55,7 +55,6 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     src="/assets/images/banners/slider-2.webp"
                     alt="hero Image two"
                     className="desktop-banner"
-                    loading="lazy"
                   />
                   <Image
                     src="/assets/images/banners/mobile/slider-2.webp"
@@ -71,7 +70,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     src="/assets/images/banners/slider-3.webp"
                     alt="hero Image Three"
                     className="desktop-banner"
-                    loading="lazy"
+                    // loading="lazy"
                   />
                   <Image
                     src="/assets/images/banners/mobile/slider-3.webp"
@@ -87,7 +86,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     src="/assets/images/banners/slider-4.webp"
                     alt="hero Image Four"
                     className="desktop-banner"
-                    loading="lazy"
+                    // loading="lazy"
                   />
                   <Image
                     src="/assets/images/banners/mobile/slider-4.webp"
@@ -103,7 +102,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     src="/assets/images/banners/slider-5.webp"
                     alt="hero Image Five"
                     className="desktop-banner"
-                    loading="lazy"
+                    // loading="lazy"
                   />
                   <Image
                     src="/assets/images/banners/mobile/slider-5.webp"
