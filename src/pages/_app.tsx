@@ -33,6 +33,26 @@ const App = ({ Component, pageProps }: any) => {
           as="image"
           href="/assets/images/banners/mobile/slider-1.webp"
         />
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/banners/mobile/slider-2.webp"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/banners/mobile/slider-3.webp"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/banners/mobile/slider-4.webp"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/images/banners/mobile/slider-5.webp"
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Nobarun International</title>
         {/*<meta name="robots" content="index" />*/}
