@@ -41,7 +41,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/slider-1.webp"
+                    src="/assets/images/banners/mobile/slider-2.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image one"
@@ -57,7 +57,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     className="desktop-banner"
                   />
                   <Image
-                    src="/assets/images/banners/mobile/slider-2.webp"
+                    src="/assets/images/banners/mobile/slider-1.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image two"
