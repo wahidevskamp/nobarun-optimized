@@ -45,8 +45,8 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     width={550}
                     height={245}
                     alt="hero Mobile Image one"
-                    className="mobile-banner lazy"
-                    priority
+                    className="mobile-banner"
+                    // priority
                     layout="responsive"
                   />
                 </SwiperSlide>
