@@ -31,7 +31,7 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
               <Swiper
                 loop={true}
                 speed={1000}
-                autoplay={{ delay: 3000 }}
+                autoplay={{ delay: 5000 }}
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
               >
                 <SwiperSlide>
@@ -46,8 +46,9 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     height={245}
                     alt="hero Mobile Image one"
                     className="mobile-banner"
-                    // priority
-                    // layout="responsive"
+                    priority
+                    layout="responsive"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </SwiperSlide>
                 <SwiperSlide>

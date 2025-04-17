@@ -40,6 +40,12 @@ export default class extends Document {
             crossOrigin="true"
           />
 
+          <link
+            rel="preload"
+            href="/assets/images/banners/mobile/slider-1.webp"
+            as="image"
+          />
+
           {/* Preload the font */}
           <link
             rel="preload"
