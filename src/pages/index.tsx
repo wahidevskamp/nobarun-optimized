@@ -42,8 +42,8 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                   />
                   <Image
                     src="/assets/images/banners/mobile/slider-1.webp"
-                    width={400}
-                    height={178}
+                    width={550}
+                    height={245}
                     alt="hero Mobile Image one"
                     className="mobile-banner"
                     priority
