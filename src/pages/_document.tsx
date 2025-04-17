@@ -70,7 +70,7 @@ export default class extends Document {
 
           {/* Google Analytics GA4 */}
           {/* Lazy Load GA4 */}
-          {/* <script
+          <script
             id="ga4-loader"
             dangerouslySetInnerHTML={{
               __html: `
@@ -91,17 +91,17 @@ export default class extends Document {
                 });
               `,
             }}
-          /> */}
+          />
 
           {/* Google Tag Manager (noscript) */}
-          {/* <noscript
+          <noscript
             dangerouslySetInnerHTML={{
               __html: `
               <iframe title="no script" src="https://www.googletagmanager.com/ns.html?id=GTM-WXL5GDL"
               height="0" width="0" style="display:none;visibility:hidden"></iframe>
             `,
             }}
-          /> */}
+          />
           {/* <!-- End Google Tag Manager (noscript) --> */}
         </body>
       </Html>
