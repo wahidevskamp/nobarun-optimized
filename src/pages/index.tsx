@@ -40,20 +40,15 @@ const HomePage = ({ clients, categories, featuredCategories }) => {
                     alt="hero Image one"
                     className="desktop-banner"
                   />
-                  <img
-                    src="/assets/images/banners/mobile/slider-1.webp"
-                    alt="hero Image one ofr mobile"
-                    className="mobile-banner"
-                  />
-                  {/* <Image
+                  <Image
                     src="/assets/images/banners/mobile/slider-1.webp"
                     width={550}
                     height={245}
                     alt="hero Mobile Image one"
                     className="mobile-banner"
                     // priority
-                    layout="responsive"
-                  /> */}
+                    // layout="responsive"
+                  />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
