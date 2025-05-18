@@ -1,0 +1,17 @@
+.product__features li {
+    display: block;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 41px;
+    position: relative;
+}
+.product__features li:before {
+    height: 32px;
+    width: 10%;
+    padding: 0 .5rem;
+    position: absolute;
+    left: 0;
+    z-index: 1080;
+}

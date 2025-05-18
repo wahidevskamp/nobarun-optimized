@@ -8,6 +8,7 @@ import { ThemeProvider } from 'styled-components';
 import '../styles/main.scss';
 import { GlobalStyles } from '../utils/globalStyles';
 import { theme } from '../utils/theme';
+import "./global.css"
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
