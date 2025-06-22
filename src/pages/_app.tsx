@@ -55,7 +55,7 @@ const App = ({ Component, pageProps }: any) => {
           href="/assets/images/banners/mobile/slider-5.webp"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <title>Nobarun International</title>
+        <title>Nobarun International || Proven Partner Since 2017</title>
         {/*<meta name="robots" content="index" />*/}
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
