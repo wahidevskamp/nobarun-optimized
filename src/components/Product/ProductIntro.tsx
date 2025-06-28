@@ -124,7 +124,15 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
       &nbsp;
     </Grid>
   );
-
+  const documentDownload = data?.document && (
+    <a
+      href={data?.document}
+      className="product__intro-attachment"
+      target="_blank"
+    >
+      <span>Real Images</span>
+    </a>
+  );
   const banglaVersionHTML =
     data?.banglaVersionLink !== '' ? (
       <a
@@ -137,15 +145,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
     ) : (
       ''
     );
-  const documentDownload = data?.document && (
-    <a
-      href={data?.document}
-      className="product__intro-attachment"
-      target="_blank"
-    >
-      <span>Document</span>
-    </a>
-  );
+
   return (
     <Card position="relative" paddingBottom="1rem">
       <Modal
