@@ -130,7 +130,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
       className="product__intro-attachment"
       target="_blank"
     >
-      <span>Real Images হবে ব্লগ </span>
+      <span>Real Images</span>
     </a>
   );
   const banglaVersionHTML =
@@ -140,7 +140,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
         className="product__hero-btn"
         target="_blank"
       >
-        ব্লগ হবে ইমেজ
+        বাংলা ব্লগ পড়ুন
       </a>
     ) : (
       ''
