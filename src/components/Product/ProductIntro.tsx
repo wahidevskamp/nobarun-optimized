@@ -60,7 +60,8 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
     }
   };
 
-const realImagesHTML =
+  // ✅ Real Images উপরে, বাংলা ব্লগ নিচে
+  const realImagesHTML =
     data?.document ? (
       <a href={data?.document} className="product__hero-btn" target="_blank">
         Real Images
@@ -81,6 +82,7 @@ const realImagesHTML =
     ) : (
       ''
     );
+
   const images = data ? (
     data?.images.map((url, ind) => (
       <Grid item xs={6} key={url + ind}>
@@ -318,7 +320,7 @@ const realImagesHTML =
                 {videos}
                 {images}
                 <Grid item xs={12}>
-                  {banglaVersionHTML}
+                  {documentDownload}
                 </Grid>
               </Grid>
             ) : (
