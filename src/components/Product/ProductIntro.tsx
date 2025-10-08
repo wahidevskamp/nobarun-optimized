@@ -60,9 +60,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
     }
   };
 
-  // ========== MODIFIED SECTION START ==========
-  // "Real Images" এখন হিরো বাটনে, "বাংলা ব্লগ পড়ুন" এখন সাইড/গ্রিডে
-  const realImagesHTML =
+const realImagesHTML =
     data?.document ? (
       <a href={data?.document} className="product__hero-btn" target="_blank">
         Real Images
@@ -71,7 +69,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
       ''
     );
 
-  const banglaVersionHTML =
+  const documentDownload =
     data?.banglaVersionLink ? (
       <a
         href={data?.banglaVersionLink}
@@ -83,8 +81,6 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
     ) : (
       ''
     );
-  // ========== MODIFIED SECTION END ==========
-
   const images = data ? (
     data?.images.map((url, ind) => (
       <Grid item xs={6} key={url + ind}>
