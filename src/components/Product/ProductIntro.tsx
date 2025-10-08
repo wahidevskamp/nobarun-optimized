@@ -60,6 +60,31 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
     }
   };
 
+  // ========== MODIFIED SECTION START ==========
+  // "Real Images" এখন হিরো বাটনে, "বাংলা ব্লগ পড়ুন" এখন সাইড/গ্রিডে
+  const realImagesHTML =
+    data?.document ? (
+      <a href={data?.document} className="product__hero-btn" target="_blank">
+        Real Images
+      </a>
+    ) : (
+      ''
+    );
+
+  const banglaVersionHTML =
+    data?.banglaVersionLink ? (
+      <a
+        href={data?.banglaVersionLink}
+        className="product__intro-attachment"
+        target="_blank"
+      >
+        <span>বাংলা ব্লগ পড়ুন</span>
+      </a>
+    ) : (
+      ''
+    );
+  // ========== MODIFIED SECTION END ==========
+
   const images = data ? (
     data?.images.map((url, ind) => (
       <Grid item xs={6} key={url + ind}>
@@ -124,27 +149,6 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
       &nbsp;
     </Grid>
   );
-  const documentDownload = data?.document && (
-    <a
-      href={data?.document}
-      className="product__intro-attachment"
-      target="_blank"
-    >
-      <span>Real Images</span>
-    </a>
-  );
-  const banglaVersionHTML =
-    data?.banglaVersionLink !== '' ? (
-      <a
-        href={data?.banglaVersionLink}
-        className="product__hero-btn"
-        target="_blank"
-      >
-        বাংলা ব্লগ পড়ুন
-      </a>
-    ) : (
-      ''
-    );
 
   return (
     <Card position="relative" paddingBottom="1rem">
@@ -183,11 +187,13 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
           />
         </Card>
       </Modal>
+
       {data && data.stockStatus && (
         <Box className="product__stock-status" backgroundColor={`#DD080F`}>
           {data.stockStatus}
         </Box>
       )}
+
       <Box overflow="hidden" px="15px" py="5px">
         <H1 fontSize={width > 660 ? '32px' : '24px'}>{data?.productName}</H1>
         <FlexBox justifyContent="space-between" mb="1.1em">
@@ -237,7 +243,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
                       ''
                     )}
                   </Box>
-                  {isPhone && banglaVersionHTML}
+                  {isPhone && realImagesHTML}
                 </FlexBox>
               )}
 
@@ -286,8 +292,9 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
               )}
             </FlexBox>
           </Box>
-          {!isPhone && banglaVersionHTML}
+          {!isPhone && realImagesHTML}
         </FlexBox>
+
         <FlexBox flexDirection={width > 900 ? 'row' : 'column'}>
           <FlexBox justifyContent="center" className="product__intro-main">
             {isLoading ? (
@@ -308,13 +315,14 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
               )
             )}
           </FlexBox>
+
           <Box className="product__hero-slider">
             {width > 900 ? (
               <Grid container>
                 {videos}
                 {images}
                 <Grid item xs={12}>
-                  {documentDownload}
+                  {banglaVersionHTML}
                 </Grid>
               </Grid>
             ) : (
@@ -341,7 +349,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
                     border="1px solid"
                     borderColor="gray.400"
                   >
-                    <a href={data?.document} target="_blank">
+                    <a href={data?.banglaVersionLink} target="_blank">
                       <Avatar
                         src="/pdf.png"
                         borderRadius="10px"
@@ -354,6 +362,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
             )}
           </Box>
         </FlexBox>
+
         <ShareButton
           title={data?.productName}
           description={data?.productName}
