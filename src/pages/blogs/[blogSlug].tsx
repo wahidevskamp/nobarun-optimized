@@ -44,14 +44,14 @@ const BlogDetails = ({ blogSlug, blog, blogCategories }) => {
             <img
               src={process.env.NEXT_PUBLIC_IMAGE_URL + blog?.featured}
               alt={blog?.SeoTitle}
-              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              style={{ objectFit: 'contain', width: '100%', maxHeight: '500px' }}
             />
-            <ShareButton
+            {/* <ShareButton
               title={blog?.blogTitle}
               description={blog?.SeoTitle}
               featured={blog?.featured}
               hashtags={blog?.tags}
-            />
+            /> */}
           </div>
           {blog?.sections?.map((section) => (
             <Box key={section.id} className="blog__section">
