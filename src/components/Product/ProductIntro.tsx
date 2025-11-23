@@ -1,8 +1,7 @@
 import IconButton from '@component/buttons/IconButton';
 import Card from '@component/Card';
 import Carousel from '@component/carousel/Carousel';
-import Modal from '@component/modal/Modal';
-import ShareButton from '@component/ShareButton/ShareButton';
+import Modal from '@component/modal/Modal'; 
 import Spinner from '@component/Spinner';
 import useWindowSize from '@hook/useWindowSize';
 import getYoutubeId from 'helpers/getYoutubeId';
@@ -13,8 +12,7 @@ import FlexBox from '../FlexBox';
 import Grid from '../grid/Grid';
 import Icon from '../icon/Icon';
 import Rating from '../rating/Rating';
-import Typography, { H1, Span } from '../Typography';
-import { display, textAlign } from 'styled-system';
+import Typography, { H1, Span } from '../Typography'; 
 
 export interface ProductIntroProps {
   data?: any;
