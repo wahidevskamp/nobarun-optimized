@@ -6,7 +6,7 @@ import FlexBox from '@component/FlexBox';
 import Icon from '@component/icon/Icon';
 import Modal from '@component/modal/Modal';
 import Rating from '@component/rating/Rating';
-import { H2, H3, SemiSpan, Span } from '@component/Typography';
+import { H2, H3, SemiSpan } from '@component/Typography';
 import useWindowSize from '@hook/useWindowSize';
 import { format } from 'date-fns';
 import getYoutubeId from 'helpers/getYoutubeId';
