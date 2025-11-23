@@ -61,10 +61,20 @@ const ProductDetails = ({ schema, slug, product, reviews, reviewCount }) => {
     window.addEventListener('scroll', handleStickyBar);
   }, []);
 
-  useEffect(() => {
-    Client.request(INCREASE_VIEW, { slug: pid });
-    setRecentlyViewedProduct(pid, product);
-  }, []);
+useEffect(() => {
+  if (!pid || !product) return;
+
+  const incrementView = async () => {
+    try {
+      await Client.request(INCREASE_VIEW, { slug: pid });
+      setRecentlyViewedProduct(pid, product);
+    } catch (error) {
+      console.error('Failed to increase view count:', error);
+    }
+  };
+
+  incrementView();
+}, [pid, product]); // Add dependencies
 
   return (
     <Fragment>
@@ -126,7 +136,7 @@ const ProductDetails = ({ schema, slug, product, reviews, reviewCount }) => {
                       (item, index) => item && index < (isTabPhone ? 4 : 6),
                     )
                     .map((item, index) => (
-                      <Grid item lg={2} md={2} sm={2} xs={3} key={index + 1}>
+                      <Grid item lg={2} md={1} sm={3} xs={4} key={index + 1}>
                         <Box className="client client_related" mr="1rem">
                           <HoverBox borderRadius={5} className="client__body">
                             <img
@@ -143,6 +153,7 @@ const ProductDetails = ({ schema, slug, product, reviews, reviewCount }) => {
                               }}
                             />
                           </HoverBox>
+                          {!isTabPhone && (
                           <Typography
                             fontSize="1.4rem"
                             fontWeight="600"
@@ -150,6 +161,7 @@ const ProductDetails = ({ schema, slug, product, reviews, reviewCount }) => {
                           >
                             {item.title}
                           </Typography>
+                          )}
                         </Box>
                       </Grid>
                     ))}

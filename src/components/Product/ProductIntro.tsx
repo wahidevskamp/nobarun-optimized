@@ -14,6 +14,7 @@ import Grid from '../grid/Grid';
 import Icon from '../icon/Icon';
 import Rating from '../rating/Rating';
 import Typography, { H1, Span } from '../Typography';
+import { display, textAlign } from 'styled-system';
 
 export interface ProductIntroProps {
   data?: any;
@@ -62,7 +63,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
 
   const images = data ? (
     data?.images.map((url, ind) => (
-      <Grid item xs={6} key={url + ind}>
+      <Grid item xs={6} key={url + ind} style={{ display: 'flex', justifyContent: 'center' }}>
         <Box
           size={isSmall ? 60 : 80}
           minWidth={isSmall ? 60 : 80}
@@ -94,7 +95,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
 
   const videos = data ? (
     data?.videos?.map((url, ind) => (
-      <Grid item xs={6} key={url + ind}>
+      <Grid item xs={6} key={url + ind} style={{ display: 'flex', justifyContent: 'center' }}>
         <Box
           key={ind}
           size={isSmall ? 60 : 80}
@@ -138,6 +139,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
       <a
         href={data?.banglaVersionLink}
         className="product__hero-btn"
+        style={{ marginTop: 0 }}
         target="_blank"
       >
         বাংলা ব্লগ পড়ুন
@@ -237,6 +239,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
                       ''
                     )}
                   </Box>
+                  {/* for mobile */}
                   {isPhone && banglaVersionHTML}
                 </FlexBox>
               )}
@@ -286,7 +289,14 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
               )}
             </FlexBox>
           </Box>
-          {!isPhone && banglaVersionHTML}
+
+          {/* real image */}
+          {!isPhone && (
+            <div style={{ display: 'flex', alignItems: 'center', width: '18.5%', marginLeft: 0 }}>
+              {documentDownload}
+            </div>
+          )}
+
         </FlexBox>
         <FlexBox flexDirection={width > 900 ? 'row' : 'column'}>
           <FlexBox justifyContent="center" className="product__intro-main">
@@ -313,9 +323,11 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
               <Grid container>
                 {videos}
                 {images}
-                <Grid item xs={12}>
-                  {documentDownload}
-                </Grid>
+                {/* for desktop */}
+                <Grid style={{ width: '100%', textAlign: 'center', marginTop: '1rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                  {!isPhone && banglaVersionHTML}
+                </Grid> 
+
               </Grid>
             ) : (
               <div style={{ width: '100%' }}>
@@ -354,12 +366,12 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
             )}
           </Box>
         </FlexBox>
-        <ShareButton
+        {/* <ShareButton
           title={data?.productName}
           description={data?.productName}
           featured={data?.featuredImage.src}
           hashtags={[]}
-        />
+        /> */}
       </Box>
     </Card>
   );

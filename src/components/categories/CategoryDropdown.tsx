@@ -28,16 +28,20 @@ const CategoryDropdown: React.FC<CategoryDropdownProps> = forwardRef(
 
     let CONTAINER;
     if (width > 1700) {
-      CONTAINER = 580;
+      CONTAINER = 490;
     }
     if (width <= 1700) {
-      CONTAINER = 520;
-    }
-    if (width <= 1400) {
       CONTAINER = 450;
     }
-    if (width <= 1100) {
-      CONTAINER = 400;
+    if (width <= 1300) {
+      CONTAINER = 390;
+    }
+    if (width <= 1025) {
+      CONTAINER = 320;
+    }
+
+    if (width <= 990) {
+      CONTAINER = 230;
     }
 
     useEffect(() => {

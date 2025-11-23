@@ -154,12 +154,17 @@ const RelatedReview = ({ title, reviews, slug, reviewCount }) => {
               key={review.name + idx}
             >
               <FlexBox alignItems="center">
-                {review && review.featuredImage && (
+                {review && review.featuredImage ? (
                   <img
                     src={
                       process.env.NEXT_PUBLIC_IMAGE_URL + review.featuredImage
                     }
                     style={{ height: '8rem', width: '8rem' }}
+                  />
+                ): (
+                  <img
+                    src="/assets/images/avatars/avatar.webp"
+                    style={{ height: '8rem', width: '8rem', marginRight: '1rem', borderRadius: '50%', objectFit: 'cover' }}
                   />
                 )}
                 <Box ml="0em">
