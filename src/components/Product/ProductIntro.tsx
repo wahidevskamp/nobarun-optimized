@@ -128,6 +128,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
       href={data?.document}
       className="product__intro-attachment"
       target="_blank"
+      style={{ fontSize: '16px', textAlign: 'center', margin: 0 }}
     >
       <span>Real Images</span>
     </a>
@@ -290,7 +291,7 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
 
           {/* real image */}
           {!isPhone && (
-            <div style={{ display: 'flex', alignItems: 'center', width: '18.5%', marginLeft: 0 }}>
+            <div style={{ display: 'flex', alignItems: 'center', width: '13.5%', marginLeft: 0 }}>
               {documentDownload}
             </div>
           )}
@@ -316,6 +317,11 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
               )
             )}
           </FlexBox>
+          {isPhone && (
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', width: '100%', marginLeft: 'auto', marginBottom: '1rem' }}>
+              {documentDownload}
+            </div>
+          )}
           <Box className="product__hero-slider">
             {width > 900 ? (
               <Grid container>
@@ -362,8 +368,13 @@ const ProductIntro: React.FC<ProductIntroProps> = ({ data }) => {
                 </Carousel>
               </div>
             )}
+
+            
           </Box>
         </FlexBox>
+
+        
+
         {/* <ShareButton
           title={data?.productName}
           description={data?.productName}
