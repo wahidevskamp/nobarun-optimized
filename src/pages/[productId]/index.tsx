@@ -152,16 +152,14 @@ useEffect(() => {
                                 objectFit: 'cover',
                               }}
                             />
-                          </HoverBox>
-                          {!isTabPhone && (
+                          </HoverBox> 
                           <Typography
                             fontSize="1.4rem"
                             fontWeight="600"
                             className="client__title"
                           >
                             {item.title}
-                          </Typography>
-                          )}
+                          </Typography> 
                         </Box>
                       </Grid>
                     ))}
