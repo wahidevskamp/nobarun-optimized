@@ -136,7 +136,7 @@ useEffect(() => {
                       (item, index) => item && index < (isTabPhone ? 4 : 6),
                     )
                     .map((item, index) => (
-                      <Grid item lg={2} md={1} sm={3} xs={4} key={index + 1}>
+                      <Grid item lg={2} md={1} sm={3} xs={3} key={index + 1}>
                         <Box className="client client_related" mr="1rem">
                           <HoverBox borderRadius={5} className="client__body">
                             <img
