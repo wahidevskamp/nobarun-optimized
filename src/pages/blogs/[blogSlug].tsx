@@ -2,8 +2,7 @@ import BlogContact from '@component/blog/BlogContact';
 import Box from '@component/Box';
 import Grid from '@component/grid/Grid';
 import OtherLayout from '@component/layout/OtherLayout';
-import BlogFilterCard from '@component/products/BlogFilterCard';
-import ShareButton from '@component/ShareButton/ShareButton';
+import BlogFilterCard from '@component/products/BlogFilterCard'; 
 import { H1, H2 } from '@component/Typography';
 import useBlogCategoriesTree from '@hook/Blogs/useAllBlogCategory';
 import useBlogBySlug from '@hook/Blogs/useBlogBySlug';
@@ -44,14 +43,14 @@ const BlogDetails = ({ blogSlug, blog, blogCategories }) => {
             <img
               src={process.env.NEXT_PUBLIC_IMAGE_URL + blog?.featured}
               alt={blog?.SeoTitle}
-              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              style={{ objectFit: 'contain', width: '100%', maxHeight: '500px' }}
             />
-            <ShareButton
+            {/* <ShareButton
               title={blog?.blogTitle}
               description={blog?.SeoTitle}
               featured={blog?.featured}
               hashtags={blog?.tags}
-            />
+            /> */}
           </div>
           {blog?.sections?.map((section) => (
             <Box key={section.id} className="blog__section">

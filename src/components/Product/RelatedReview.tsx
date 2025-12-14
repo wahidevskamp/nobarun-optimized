@@ -6,7 +6,7 @@ import FlexBox from '@component/FlexBox';
 import Icon from '@component/icon/Icon';
 import Modal from '@component/modal/Modal';
 import Rating from '@component/rating/Rating';
-import { H2, H3, SemiSpan, Span } from '@component/Typography';
+import { H2, H3, SemiSpan } from '@component/Typography';
 import useWindowSize from '@hook/useWindowSize';
 import { format } from 'date-fns';
 import getYoutubeId from 'helpers/getYoutubeId';
@@ -154,12 +154,17 @@ const RelatedReview = ({ title, reviews, slug, reviewCount }) => {
               key={review.name + idx}
             >
               <FlexBox alignItems="center">
-                {review && review.featuredImage && (
+                {review && review.featuredImage ? (
                   <img
                     src={
                       process.env.NEXT_PUBLIC_IMAGE_URL + review.featuredImage
                     }
-                    style={{ height: '8rem', width: '8rem' }}
+                    style={{ height: '8rem', width: '8rem',marginRight: '1.5rem' }}
+                  />
+                ): (
+                  <img
+                    src="/assets/images/avatars/avatar.webp"
+                    style={{ height: '8rem', width: '8rem', marginRight: '1rem', borderRadius: '50%', objectFit: 'cover' }}
                   />
                 )}
                 <Box ml="0em">
@@ -185,16 +190,17 @@ const RelatedReview = ({ title, reviews, slug, reviewCount }) => {
                 review.reviewText
                   .replace(/<(p|div)>\s*(<br>|&nbsp;)*\s*<\/\1>/gi, '')
                   .trim() && (
-                  <Span
+                  <Box
                     fontSize="2.2rem"
-                    marginTop="1.5em"
+                    marginTop="0em"
                     color="gray.700"
                     textAlign="justify"
+                    style={{ marginTop: '-1.5rem' }}
                   >
                     <div
                       dangerouslySetInnerHTML={{ __html: review.reviewText }}
                     />
-                  </Span>
+                  </Box>
                 )}
 
               <Box className="product-images" mt="2rem">

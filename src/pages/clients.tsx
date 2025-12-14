@@ -7,8 +7,8 @@ import useAllClientsByCategory from '@hook/useAllClientsByCategory';
 import useProductCount from '@hook/useNoOfProduct';
 import useWindowSize from '@hook/useWindowSize';
 import Head from 'next/head';
-import { useState } from 'react';
-
+import { useState, useEffect } from 'react';
+// ...existing code...
 const ClientsPage = ({ clients }) => {
   const [allLoadedCategory, setAllLoadedCategory] = useState('');
 
@@ -30,6 +30,33 @@ const ClientsPage = ({ clients }) => {
   if (width < 936) noOfClients = 5;
   if (width < 880) noOfClients = 7;
   if (width < 710) noOfClients = 6;
+
+  // adjust client name font-size so it stays on one line
+  useEffect(() => {
+    const adjustTitles = () => {
+      const els = document.querySelectorAll<HTMLElement>('.client__title');
+      els.forEach((el) => {
+        el.style.whiteSpace = 'nowrap';
+        el.style.overflow = 'hidden';
+        el.style.textOverflow = 'ellipsis';
+
+        let fontSize = 14; // start slightly bigger
+        const minSize = 10; // minimum to shrink to
+        el.style.fontSize = fontSize + 'px';
+
+        // shrink until it fits or reaches min size
+        while (el.scrollWidth > el.clientWidth && fontSize > minSize) {
+          fontSize -= 1;
+          el.style.fontSize = fontSize + 'px';
+        }
+      });
+    };
+
+    adjustTitles();
+    window.addEventListener('resize', adjustTitles);
+    return () => window.removeEventListener('resize', adjustTitles);
+  }, [clients, allLoadedCategory, width]);
+
   return (
     <>
       <Head>
@@ -65,7 +92,7 @@ const ClientsPage = ({ clients }) => {
                       />
                     </HoverBox>
                     <H3
-                      fontSize="12px"
+                      fontSize="14px"
                       fontWeight="600"
                       className="client__title"
                     >
@@ -122,3 +149,4 @@ export async function getStaticProps() {
 }
 
 export default ClientsPage;
+// ...existing code...
